@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  
+  <title>Ray Tech 1 | Cux&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ray渲染基础教程一Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/chan">
+<meta name="keywords" content="MMD,教程,ray">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ray Tech 1">
+<meta property="og:url" content="http://cuxevrip.top/Ray-Tech-1/index.html">
+<meta property="og:site_name" content="Cux&#39;s Blog">
+<meta property="og:description" content="Ray渲染基础教程一Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/chan">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2017-08-19T08:53:21.114Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ray Tech 1">
+<meta name="twitter:description" content="Ray渲染基础教程一Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/chan">
+  
+    <link rel="alternate" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/layout.css">
+  
+
+</head>
+
+<body>
+  <header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">Cux</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/MMD">
+                MMD
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/MMD">
+                MMD
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <!--博文页面-->
+
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
+        background-size: cover;
+        background-color: lightsteelblue;
+    }
+
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
+    }
+
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .flow-chart {
+        text-align: center;
+    }
+
+    img[alt="post-cover"] {
+        display: none;
+    }
+</style>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>Ray Tech 1</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="http://i1.bvimg.com/607380/2b355dd6386b922a.jpg">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> Cux</span>
+                <span class="post-date sub-title">at: 2017-08-19</span>
+            </div>
+            
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/tags/MMD/">MMD</a>
+                    
+                         <a class="tag is-post-tag" href="/tags/教程/">教程</a>
+                    
+                         <a class="tag is-post-tag" href="/tags/ray/">ray</a>
+                    
+                </div>
+            
+        </div>
+        <div class="content" style="overflow: auto">
+            <h3 id="Ray渲染基础教程一"><a href="#Ray渲染基础教程一" class="headerlink" title="Ray渲染基础教程一"></a>Ray渲染基础教程一</h3><p>Ray-mmd官方地址：<a href="https://github.com/ray-cast/ray-mmd" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd</a><br>更新信息：<a href="https://github.com/ray-cast/ray-mmd/releases" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/releases</a><br>官方wiki：<a href="https://github.com/ray-cast/ray-mmd/wiki" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/wiki</a><br>官方教程：<a href="https://space.bilibili.com/24434095#!/channel/detail?cid=18483" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=18483</a><br>RC教程：<a href="https://www.bilibili.com/video/av10181955/" target="_blank" rel="external">https://www.bilibili.com/video/av10181955/</a></p>
+<hr>
+<h4 id="Ray渲染使用方法与基本操作"><a href="#Ray渲染使用方法与基本操作" class="headerlink" title="Ray渲染使用方法与基本操作"></a>Ray渲染使用方法与基本操作</h4><ol>
+<li>删除或无效模型的高光贴图并保存为model.pmx<br>(1.31版本不支持高光，1.4版本支持高光，在main里载入main_ex_with_sphmap.fx即可)</li>
+<li>在MMD加载ray.x以及ray_controller.pmx</li>
+<li>关闭MMD的抗锯齿，关掉模型轮廓线（场景载入后也要关）</li>
+<li><p>载入天空盒GrandCanyon中的skybox_hdr.pmx文件</p>
+<blockquote>
+<p>4-1.在MME里 Main选项卡中给天空盒载入skybox_hdr.fx<br>4-2.在EnvLightMap中给天空盒载入skylighting_hdr.fx<br>4-3.在MaterialMap中给天空盒载入\Materials\material_skybox.fx<br>4-4.在FogMap中给天空盒载入xx_fog.fx（如果需要用或者有的话）<br>4-5.在&lt;背景-模型描绘顺序&gt;将天空盒调到第一（就是把skybox.pmx调到第一位）<br>（描绘顺序1天空盒2场景3模型）<br>4-6.在skybox.pmx的模型上控制天空盒效果</p>
+</blockquote>
+</li>
+<li><p>载入已去高光贴图的模型文件model.pmx<br>5-1.在Main中给人物模型载入main.fx<br>5-2.在MaterialMap中把人物模型展开<br>5-3.给人物模型各个部位打上对应材质</p>
+<blockquote>
+<p> a)给身体部位加载\Materials\Skin\TDA\material_TDA_body.fx<br>b)给脸的部位加载\Materials\Skin\TDA\material_TDA_face.fx<br> c)给头发部位加载\Materials\Hair\material_hair.fx<br> d)给衣服部位加载\Materials\Cloth\material_cloth.fx<br> e)给发光部位加载\Materials\Emissive\Fixed Color xN\material_albedo_xN.fx<br> f)给光滑部位加载\Materials\ClearCoat\material_albedo.fx<br>  g)给金属部位加载\Materials\Metallic\Flat ingot smooth\material_smooth_metal.fx</p>
+</blockquote>
+</li>
+<li><p>删除或无效场景的高光贴图并保存为stage.pmx</p>
+</li>
+<li>重复与人物模型相同的操作</li>
+<li>调整ray_controller.pmx和skybox.pmx的参数使画面达到较好的效果</li>
+</ol>
+<hr>
+<h4 id="自定义天空盒的方法"><a href="#自定义天空盒的方法" class="headerlink" title="自定义天空盒的方法"></a>自定义天空盒的方法</h4><ol>
+<li>先备份一份\Skybox\GrandCanyon</li>
+<li>重命名为任意你喜欢的名字，如newskybox</li>
+<li>上Nico静画搜索下载某个天空盒的图片并用PS打开</li>
+<li>在菜单 图像—模式 中选择32位高位深色彩通道模式</li>
+<li>选择 图像—图像大小，调整成指定的图片比例：4000宽x2000高</li>
+<li>将天空盒图片存储导出为HDR格式</li>
+<li>解压\Tools\cmft_rgbt_x1024.zip压缩包</li>
+<li>将刚刚导出的HDR文件拖在\Tools\cmft_rgbt_x1024\cmft_x64_high_rgbt.exe上</li>
+<li>接着会弹出一个黑色窗口，等待他处理完毕，处理完毕后会在HDR同路径生成三个文件</li>
+<li>将生成的三个文件覆盖到\Skybox\newskybox\texture中</li>
+<li>自定义天空盒完毕，可以在Ray中使用了，使用方法不变</li>
+</ol>
+
+        </div>
+        <div class="post-reply">
+            
+            
+        </div>
+    </div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
+        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
+        <br>
+        Copyright © 卡斯 2017
+        <br>
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/search_core.js"></script>
+<script src="/js/script.js"></script>
+
+</body>
+</html>
