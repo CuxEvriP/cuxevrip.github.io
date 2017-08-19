@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html class="full-height">
+<html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
+
   <title>Cux&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
@@ -16,550 +14,661 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cux&#39;s Blog">
   
-    <link rel="alternate" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/nav.css">
-<link rel="stylesheet" href="/css/layout.css">
+  <!--<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="/./lib/foundation/css/normalize.css">
+<link rel="stylesheet" href="/./lib/foundation/css/foundation.css">
+  <link rel="stylesheet" href="/./css/style.css">
   
 
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
-  <div class="container">
-    <nav class="nav">
-         <div class="nav-left">
-            <a href="/" class="nav-item" style="font-size: 20px;">
-              <span class="logo">Cux</span>'s Blog
-            </a>
-         </div>
-        <div class="nav-center is-hidden position-relative" id="search_container">
-            <div class="nav-item full-width full-height">
-                <i class="fa fa-search has-padding" aria-hidden="true"></i>
-                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
-                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-            </div>
-            <div id="search_result"></div>
-        </div>
-        <div class="nav-right nav-menu">
-            <a class="nav-item" id="search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </a>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+
+  <div id="container" class="page">
+
+    <div>
+      <header class="l-header">
+  <div class="l-banner"></div>
+
+  <div class="contain-to-grid sticky">
+
+      <nav id="main-nav" class="top-bar">
+        <ul class="title-area">
+            <li class="name">
+              <h1 class="logo-wrap">
+                <a href="/" id="logo">Cux&#39;s Blog</a>
+              </h1>
+              
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+              <a role="button" href="#idOfRightMenu" class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </li>
+          </ul>
+
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
             
-            <a class="nav-item" href="/">
-                Home
-            </a>
+            <li>
+              <a class="main-nav-link" href="/">Home</a>
+            </li>
             
-            <a class="nav-item" href="/MMD">
-                MMD
-            </a>
+            <li>
+              <a class="main-nav-link" href="/MMD">MMD</a>
+            </li>
             
-        </div>
-        <span class="nav-toggle" id="navMenuDropdown">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            <li>
+              <a class="main-nav-link" href="/archives">Archives</a>
+            </li>
             
-            <a class="nav-item flex-1" href="/">
-                Home
-            </a>
-            
-            <a class="nav-item flex-1" href="/MMD">
-                MMD
-            </a>
-            
-        </div>
-    </nav>
+          </ul>
+        </section>
+
+
+      <ul id="nav-search-form" class="left">
+        <li>
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        </li>
+
+        <li class="has-form">
+            <div class="l-search">
+  <form class="row collapse" action="//google.com/search" method="get" accept-charset="utf-8">
+    <div class="large-8 small-9 columns">
+      <input type="search" name="q" results="0" placeholder="search">
+    </div>
+    <div class="large-4 small-3 columns">
+      <button href="#" class="button expand">Search</button>
+    </div>
+    <input type="hidden" name="q" value="site:cuxevrip.top">
+  </form>
+</div>
+
+        </li>
+      </ul>
+
+      </nav>
+
+    </div>
+
   </div>
 </header>
 
-  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      <div class="main-inner-content">
-          <style>
-    .post-hover:hover {
-        box-shadow: inset 0 0 100px #000;
-        transition: box-shadow .2s;
-    }
 
-    .sub-post-container .post-hover:hover h3 {
-        text-decoration: underline gray;
-    }
+      <div class="l-main row">
 
+        <section id="main" class="medium-8 large-8 columns">
+          
+  
+    <article id="post-Ray-Tech-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-main">
 
-    .primary-item-main {
-        height: 330px;
-        background-size: cover;
-    }
+    
 
-    .primary-container .title,
-    .primary-container .sub-title,
-    .primary-container .post-content-text,
-    .primary-container .date {
-        color: #fff;
-    }
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/Ray-Tech-2/">Ray Tech 2</a>
+    </h1>
+  
 
-    .post-content-text {
-        color: #f1f1f1!important;
-    }
+      </header>
+      <hr />
+    
 
-    .primary-container .post-hover {
-        background: black;
-    }
-
-    .content-bg-mask {
-        background: rgba(0,0,0,.4);
-    }
-
-</style>
-
-<div style="background: #f5f8f9;">
-    <div id="main-container" class="container" style="padding-top: 20px;">
-        <div class="is-flex main-content justify-center">
-            <section class="column is-9">
-                
-<div class="primary-container content-box is-flex-desktop clear-padding bottom-line" style="margin-bottom: 25px;">
-    <div class="column  is-7-desktop">
-        <a href="/Ray-Tech-2/">
-            <div class="full-height post-hover"
-                 style="
-                         background-image: url('');
-                         height: 350px;
-                         background-size: cover;
-                         background-repeat: no-repeat;
-                         ">
-                    <div class=" is-flex flex-column center content has-text-centered full-height has-padding content-bg-mask">
-                        <h1 class="title text-shadow" style="margin-bottom: 15px;">
-                            Ray Tech 2
-                        </h1>
-                        <div>
-                        
-                            `
-                                <span class="tag is-post-tag">MMD</span>
-                            `
-                                <span class="tag is-post-tag">教程</span>
-                            `
-                                <span class="tag is-post-tag">ray</span>
-                            
-                        
-                        </div>
-                        <p class="post-content-text is-marginless has-padding text-shadow">
-                            Ray渲染基础教程二ray_controller和Skybox控制器
-Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray..
-                        </p>
-                        <p class="date text-shadow">2017-08-19</p>
-                        <button class="button is-info is-small">Read More</button>
-                    </div>
-            </div>
-        </a>
-    </div>
-    <div class="column is-5 is-hidden-touch" style="padding-left: 0;">
-        <div class="full-height is-flex flex-column justify-space-between" style="min-height: 350px;">
-            
-                
-<a class="post-hover" href="/Proper-Noun-Introduction/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('http://i2.bvimg.com/607380/664b9df123fb9e13.jpg')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Some Proper Noun Introduction
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                渲染专业术语的简单介绍渲染有很多专业术语，需要先对这些术语有一个简单的概念理解才能更好的学习渲染..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
-        </div>
-    </div>
+    <div class="article-meta">
+      <span class="article-datetime">
+      <a href="/Ray-Tech-2/" class="article-date">
+  <time datetime="2017-08-19T09:21:13.000Z" itemprop="datePublished">8月 19日, 2017</time>
 </a>
-            
-            
-                
-<a class="post-hover" href="/Ray-Tech-1/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Ray Tech 1
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                Ray渲染基础教程一
-Ray-mmd官方地址：https://github.com/ray-ca..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
-        </div>
+      </span>
+      
     </div>
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Ray渲染基础教程二"><a href="#Ray渲染基础教程二" class="headerlink" title="Ray渲染基础教程二"></a>Ray渲染基础教程二</h2><h3 id="ray-controller和Skybox控制器"><a href="#ray-controller和Skybox控制器" class="headerlink" title="ray_controller和Skybox控制器"></a>ray_controller和Skybox控制器</h3><blockquote>
+<p>Ray-mmd官方地址：<a href="https://github.com/ray-cast/ray-mmd" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd</a><br>更新信息：<a href="https://github.com/ray-cast/ray-mmd/releases" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/releases</a><br>官方wiki：<a href="https://github.com/ray-cast/ray-mmd/wiki" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/wiki</a><br>官方教程：<a href="https://space.bilibili.com/24434095#!/channel/detail?cid=18483" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=18483</a><br>RC教程：<a href="https://www.bilibili.com/video/av10181955/" target="_blank" rel="external">https://www.bilibili.com/video/av10181955/</a></p>
+</blockquote>
+<hr>
+<h3 id="ray-controller-pmx"><a href="#ray-controller-pmx" class="headerlink" title="ray_controller.pmx"></a>ray_controller.pmx</h3><p>SunLight             主光源的整体光强<br>SunShadowRGBV         主光源产生阴影时的颜色<br>MultiLight             多光源的整体光强<br>SSAO                环境光遮蔽强度<br>SSAORadius            环境光遮蔽半径<br>SSDO                多光源的直接遮蔽强度<br>SSSS                 次表面散射的模糊强度</p>
+<p>BloomThreshold         产生泛光所需的亮度阈值<br>BloomRadius         泛光的模糊半径<br>BloomColorA HSV        泛光颜色<br>BloomStarFade</p>
+<p>Exposure            曝光强度，默认2.0的曝光<br>Vignette             窗口四周的暗角(虚角)<br>Dispersion             相机色散的效果<br>DispersionRadius     相机色散的区域大小</p>
+<p>Contrast             对比度<br>Saturation             饱和度<br>Gamma                 伽马<br>Temperature         色温<br>BalanceR/G/B         色彩平衡</p>
+<hr>
+<h3 id="Skybox-pmx"><a href="#Skybox-pmx" class="headerlink" title="Skybox.pmx"></a>Skybox.pmx</h3><p>BalanceRGB        颜色平衡RGB<br>BalanceGray        颜色平衡灰度</p>
+<p>EnvDiffLight    环境漫反射<br>EnvSpecLight    环境镜反射<br>EnvSSSLight        环境次表面光<br>EnvRotateXYZ    旋转天空盒</p>
+<p>DiffuseRGB        漫反射RGB<br>DiffuseGray        漫反射灰度</p>
+<p>SpecularRGB        镜反射RGB<br>SpecularGray    镜反射灰度</p>
+<hr>
+<h3 id="Time-of-the-day-pmx"><a href="#Time-of-the-day-pmx" class="headerlink" title="Time of the day.pmx"></a>Time of the day.pmx</h3><p>注意天空盒MME选项栏中载入几个fx<br>Main中载入Time of the day.fx<br>FogMap中载入Time of fog.fx（或选择其他fog或者不用）<br>EnvLightMap中载入Time of lighting.fx<br>MaterialMap中载入material_skybox.fx</p>
+<p>SunRadius            太阳半径<br>SunRadiance            太阳光强度<br>MiePhase            米散射（Godray强度）<br>MieTurbidity        米浑浊<br>RayLeighColorHSV    Godray颜色<br>RayleighHeight        Godray高度</p>
+<p>EnvDiffLight        环境光漫反射<br>EnvSpecLight        环境光镜反射<br>EnvSSSLight            环境光次表面反射</p>
+<p>FogRange            雾范围<br>FogIntensity        雾强度<br>FogDensity            雾密度<br>FogDensityFar        雾远处密度</p>
+<p>Cloud                云<br>CloudTurbidity        云混浊度<br>CloudSpeed            云速度</p>
+<hr>
+<h3 id="Time-of-the-night-pmx"><a href="#Time-of-the-night-pmx" class="headerlink" title="Time of the night.pmx"></a>Time of the night.pmx</h3><p>SunRadius            太阳半径<br>SunRadiance            太阳光强度<br>MiePhase            太阳光晕<br>MieTurbidity        太阳混浊度<br>RayLeighColorHSV    太阳光线颜色<br>RayleighHeight        太阳光线强度</p>
+<p>EnvDiffLight        环境光漫反射<br>EnvSpecLight        环境光镜反射<br>EnvSSSLight            环境光次表面反射</p>
+<p>FogRange            雾范围<br>FogIntensity        雾强度<br>FogDensity            雾密度</p>
+<p>StarSaturation        星星饱和度<br>StarBrightness        星星亮度<br>Meteor                流星        </p>
+
+      
+    </div>
+
+    <footer class="article-footer">
+
+      <div class="large-4 columns article-share article-share-fb"><a href="https://www.facebook.com/sharer/sharer.php?u=http://cuxevrip.top/Ray-Tech-2/" url="http://cuxevrip.top/Ray-Tech-2/" data-id="cj6j484rw0002xkaoabzgvzdk" class="article-share-link">Share on Facebook</a>
+      </div>
+
+      <div class="large-4 columns article-share article-share-tw"><a href='https://twitter.com/home?status=Ray Tech 2 http://cuxevrip.top/Ray-Tech-2/ '></a></div>
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MMD/">MMD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ray/">ray</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Proper-Noun-Introduction" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-main">
+
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/Proper-Noun-Introduction/">Some Proper Noun Introduction</a>
+    </h1>
+  
+
+      </header>
+      <hr />
+    
+
+    <div class="article-meta">
+      <span class="article-datetime">
+      <a href="/Proper-Noun-Introduction/" class="article-date">
+  <time datetime="2017-08-19T08:59:52.000Z" itemprop="datePublished">8月 19日, 2017</time>
 </a>
-            
-        </div>
+      </span>
+      
     </div>
-    <div class="column is-12 is-hidden-desktop">
-        
-        
-<a class="post-hover" href="/Proper-Noun-Introduction/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('http://i2.bvimg.com/607380/664b9df123fb9e13.jpg')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Some Proper Noun Introduction
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                渲染专业术语的简单介绍渲染有很多专业术语，需要先对这些术语有一个简单的概念理解才能更好的学习渲染..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
-        </div>
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="渲染专业术语的简单介绍"><a href="#渲染专业术语的简单介绍" class="headerlink" title="渲染专业术语的简单介绍"></a>渲染专业术语的简单介绍</h1><p>渲染有很多专业术语，需要先对这些术语有一个简单的概念理解才能更好的学习渲染.<br>本篇内容只是非常随意的抽取一些文字和图片资料帮助大家对专业术语有一个简单的理解，内容并不严谨，如有什么不正确的地方也请dalao们见谅.</p>
+<hr>
+<h4 id="环境光遮蔽"><a href="#环境光遮蔽" class="headerlink" title="环境光遮蔽"></a>环境光遮蔽</h4><p>英文名Ambient Occlusion，简称AO<br>AO是来描绘物体和物体相交或靠近的时候遮挡周围漫反射光线的效果，可以解决或改善漏光、飘和阴影不实等问题，解决或改善场景中缝隙、褶皱与墙角、角线以及细小物体等的表现不清晰问题，综合改善细节尤其是暗部阴影，增强空间的层次感、真实感，同时加强和改善画面明暗对比，增强画面的艺术性。<br><img src="http://i2.bvimg.com/607380/664b9df123fb9e13.jpg" alt=""><br><img src="http://i2.bvimg.com/607380/56cb5277593d3f94.jpg" alt=""></p>
+<h4 id="屏幕空间环境光遮蔽"><a href="#屏幕空间环境光遮蔽" class="headerlink" title="屏幕空间环境光遮蔽"></a>屏幕空间环境光遮蔽</h4><p>英文名Screen-Space Ambient Occlusion，简称SSAO<br>SSAO是AO的升级版。SSAO是一个纯粹的图形渲染技术，也可以看成是一个算法。SSAO通过采样象素周围的信息，并进行简单的深度值对比来计算物体身上环境光照无法到达的范围，从而可以近似地表现出物体身上在环境光照下产生的轮廓阴影。可以利用“逐象素场景深度计算”技术计算得出的深度值直接参与运算。<br><img src="http://i2.bvimg.com/607380/169da1842ac4c404.jpg" alt=""></p>
+<h4 id="屏幕空间定向遮蔽"><a href="#屏幕空间定向遮蔽" class="headerlink" title="屏幕空间定向遮蔽"></a>屏幕空间定向遮蔽</h4><p>英文名Screen Space Directional Occlusion，简称SSDO，是SSAO的改良版</p>
+<h4 id="次表面散射"><a href="#次表面散射" class="headerlink" title="次表面散射"></a>次表面散射</h4><p>英文名Subsurface Scattering，简称SSS或3S<br>SSS是光射入非金属材质后在内部发生散射，最后射出物体并进入视野中产生的现象，是指光从表面进入物体经过内部散射，然后又通过物体表面的其他顶点出射的光线传递过程。<br><img src="http://i2.bvimg.com/607380/e57524d19c789479.png" alt=""></p>
+<h4 id="漫反射"><a href="#漫反射" class="headerlink" title="漫反射"></a>漫反射</h4><p>英文名Diffuse Reflection<br>漫反射，是投射在粗糙表面上的光向各个方向反射的现象。当一束平行的入射光线射到粗糙的表面时，表面会把光线向着四面八方反射，所以入射线虽然互相平行，由于各点的法线方向不一致，造成反射光线向不同的方向无规则地反射，这种反射称之为“漫反射”或“漫射”。这种反射的光称为漫射光。很多物体，如植物、墙壁、衣服等，其表面粗看起来似乎是平滑，但用放大镜仔细观察，就会看到其表面是凹凸不平的，所以本来是平行的太阳光被这些表面反射后，弥漫地射向不同方向。<br><img src="http://i2.bvimg.com/607380/c3197739b85cf536.gif" alt=""></p>
+<h4 id="抗锯齿"><a href="#抗锯齿" class="headerlink" title="抗锯齿"></a>抗锯齿</h4><p>英文名Anti-Aliasing，简称AA<br>抗锯齿也译为边缘柔化、消除混叠、抗图像折叠有损等。它是一种消除显示器输出的画面中图物边缘出现凹凸锯齿的技术，那些凹凸的锯齿通常因为高分辨率的信号以低分辨率表示或无法准确运算出3D图形坐标定位时所导致的图形混叠（aliasing）而产生的，反锯齿技术能有效地解决这些问题。它通常被用在在数字信号处理、数字摄影、电脑绘图与数码音效及电子游戏等方面，柔化被混叠的数字信号。<br>快速近似抗锯齿（FXAA）是AA的升级版<br><img src="http://i2.bvimg.com/607380/e34893ad2b71c004.jpg" alt=""></p>
+<h4 id="光域网"><a href="#光域网" class="headerlink" title="光域网"></a>光域网</h4><p>光域网是一种关于光源亮度分布的三维表现形式，存储于IES文件当中。光域网是灯光的一种物理性质，确定光在空气中发散的方式<br> <img src="http://i2.bvimg.com/607380/24a6ecd86e0c4cdb.jpg" alt=""></p>
+<h4 id="Alpha通道"><a href="#Alpha通道" class="headerlink" title="Alpha通道"></a>Alpha通道</h4><p>即图像透明通道<br>Alpha通道是一个8位的灰度通道，该通道用256级灰度来记录图像中的透明度信息，定义透明、不透明和半透明区域，其中黑表示透明，白表示不透明，灰表示半透明。<br><img src="http://i2.bvimg.com/607380/408803f3045f8c22.png" alt=""></p>
+<h4 id="对比度"><a href="#对比度" class="headerlink" title="对比度"></a>对比度</h4><p>英文名Contrast Ratio<br>对比度指的是一幅图像中明暗区域最亮的白和最暗的黑之间不同亮度层级的测量，差异范围越大代表对比越大，差异范围越小代表对比越小，好的对比率120:1就可容易地显示生动、丰富的色彩，当对比率高达300:1时，便可支持各阶的颜色。但对比率遭受和亮度相同的困境，现今尚无一套有效又公正的标准来衡量对比率，所以最好的辨识方式还是依靠使用者眼睛。<br><img src="http://i2.bvimg.com/607380/e330795d899a23f5.jpg" alt=""></p>
+<h4 id="图像伽马值"><a href="#图像伽马值" class="headerlink" title="图像伽马值"></a>图像伽马值</h4><p>英文名Gamma<br>图像伽马值是曲线优化调整，是亮度和对比度的辅助功能，强力伽马优化模式可以对画面进行细微的明暗层次调整，控制整个画面对比度表现，再现立体美影像，此项技术的关键就在于“强力伽马曲线优化模式”，对每一帧画面都进行固定的伽马调整，画面的亮度和对比度得到大大的优化，画质也可以得到了大大的提升。<br><img src="http://i2.bvimg.com/607380/b0fc0acc818ea42a.jpg" alt=""></p>
+<h4 id="饱和度"><a href="#饱和度" class="headerlink" title="饱和度"></a>饱和度</h4><p>英文名Saturation<br>饱和度是指色彩的鲜艳程度，也称色彩的纯度。饱和度取决于该色中含色成分和消色成分（灰色）的比例。含色成分越大，饱和度越大；消色成分越大，饱和度越小。纯的颜色都是高度饱和的，如鲜红，鲜绿。混杂上白色，灰色或其他色调的颜色，是不饱和的颜色，如绛紫，粉红，黄褐等。完全不饱和的颜色根本没有色调，如黑白之间的各种灰色.<br>下图左边为饱和度降低，中间为原图，右边为饱和度提高<br><img src="http://i2.bvimg.com/607380/babf3662f75889fb.png" alt=""></p>
+<h4 id="色温"><a href="#色温" class="headerlink" title="色温"></a>色温</h4><p>英文名Colour Temperature<br>色温是表示光源光谱质量最通用的指标。一般用Tc表示。色温是按绝对黑体来定义的，绝对黑体的辐射和光源在可见区的辐射完全相同时，此时黑体的温度就称此光源的色温。低色温光源的特征是能量分布中，红辐射相对来说要多些，通常称为“暖光”；色温提高后，能量分布中，蓝辐射的比例增加，通常称为“冷光”。一些常用光源的色温为：标准烛光为1930K（开尔文温度单位）；钨丝灯为2760-2900K；荧光灯为6400K；闪光灯为3800K；中午阳光为5000K；电子闪光灯为6000K；蓝天为10000K。<br><img src="http://i2.bvimg.com/607380/1f51634efd02b640.jpg" alt=""></p>
+<h4 id="法线贴图"><a href="#法线贴图" class="headerlink" title="法线贴图"></a>法线贴图</h4><p>英文名Normal map<br>法线贴图的作用是模拟出高模上的一些细节纹理，特别是将高模上的圆滑和粗糙度投射到低模上，让低模也有高模的效果。因为高模的面数非常多，导入引擎后电脑是跑不动的，所以用低模加上法线贴图就能很好的解决这个问题。<br><img src="http://i2.bvimg.com/607380/482e59f3ba1d006d.png" alt="右图使用了法线贴图而左图没有使用"></p>
+<h4 id="高光贴图"><a href="#高光贴图" class="headerlink" title="高光贴图"></a>高光贴图</h4><p>英文名Speculer map<br>高光贴图的作用是表现模型一些质感，世界万物中所有物体，不同材质，在光照下，它们的反射光的强弱都不同。所以我们利用这个特性，制作了这张高光贴<br>图来模仿不同材质在光照效果下反射出不同的效果。<br><img src="http://i2.bvimg.com/607380/9e8d523041e9dda5.png" alt="右图使用了高光贴图而左图没有使用"></p>
+<h4 id="RGB色彩模式"><a href="#RGB色彩模式" class="headerlink" title="RGB色彩模式"></a>RGB色彩模式</h4><p>RGB色彩模式是工业界的一种颜色标准，是通过对红(R)、绿(G)、蓝(B)三个颜色通道的变化以及它们相互之间的叠加来得到各式各样的颜色的，RGB即是代表红、绿、蓝三个通道的颜色，这个标准几乎包括了人类视力所能感知的所有颜色，是目前运用最广的颜色系统之一。在电脑中，RGB的所谓“多少”就是指亮度，并使用整数来表示。通常情况下，RGB各有256级亮度，用数字表示为从0、1、2…直到255。注意虽然数字最高是255，但0也是数值之一，因此共256级。如同2000年到2010年共是11年一样。按照计算，256级的RGB色彩总共能组合出约1678万种色彩，即256×256×256=16777216。通常也被简称为1600万色或千万色。也称为24位色(2的24次方)。<br> <img src="http://i2.bvimg.com/607380/dc50deba84a7d24e.png" alt=""></p>
+<h4 id="HSV颜色模型"><a href="#HSV颜色模型" class="headerlink" title="HSV颜色模型"></a>HSV颜色模型</h4><p>HSV是一种颜色空间。H(Hue) 代表色相，他是指颜色取值范围在0-360°的圆心角，每个角度可以代表一种颜色。S是Saturation，即饱和度的意思。 V 是Value，代表明度，他所表述的是一个东西：对光的量或光源的功率的感知。<br><img src="http://i2.bvimg.com/607380/9c0c49b6ca6bab57.jpg" alt="色相环"><br>（信息均源自网络，侵权致歉）<br>2017-8-12</p>
+
+      
     </div>
+
+    <footer class="article-footer">
+
+      <div class="large-4 columns article-share article-share-fb"><a href="https://www.facebook.com/sharer/sharer.php?u=http://cuxevrip.top/Proper-Noun-Introduction/" url="http://cuxevrip.top/Proper-Noun-Introduction/" data-id="cj6j484ro0000xkaotmh6751g" class="article-share-link">Share on Facebook</a>
+      </div>
+
+      <div class="large-4 columns article-share article-share-tw"><a href='https://twitter.com/home?status=Some Proper Noun Introduction http://cuxevrip.top/Proper-Noun-Introduction/ '></a></div>
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MMD/">MMD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ray/">ray</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Ray-Tech-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-main">
+
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/Ray-Tech-1/">Ray Tech 1</a>
+    </h1>
+  
+
+      </header>
+      <hr />
+    
+
+    <div class="article-meta">
+      <span class="article-datetime">
+      <a href="/Ray-Tech-1/" class="article-date">
+  <time datetime="2017-08-19T08:45:39.000Z" itemprop="datePublished">8月 19日, 2017</time>
 </a>
-        
-        
-        
-<a class="post-hover" href="/Ray-Tech-1/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Ray Tech 1
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                Ray渲染基础教程一
-Ray-mmd官方地址：https://github.com/ray-ca..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
-        </div>
+      </span>
+      
     </div>
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Ray渲染基础教程一"><a href="#Ray渲染基础教程一" class="headerlink" title="Ray渲染基础教程一"></a>Ray渲染基础教程一</h3><blockquote>
+<p>Ray-mmd官方地址：<a href="https://github.com/ray-cast/ray-mmd" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd</a><br>更新信息：<a href="https://github.com/ray-cast/ray-mmd/releases" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/releases</a><br>官方wiki：<a href="https://github.com/ray-cast/ray-mmd/wiki" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/wiki</a><br>官方教程：<a href="https://space.bilibili.com/24434095#!/channel/detail?cid=18483" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=18483</a><br>RC教程：<a href="https://www.bilibili.com/video/av10181955/" target="_blank" rel="external">https://www.bilibili.com/video/av10181955/</a></p>
+</blockquote>
+<hr>
+<h4 id="Ray渲染使用方法与基本操作"><a href="#Ray渲染使用方法与基本操作" class="headerlink" title="Ray渲染使用方法与基本操作"></a>Ray渲染使用方法与基本操作</h4><ol>
+<li>删除或无效模型的高光贴图并保存为model.pmx<br>(1.31版本不支持高光，1.4版本支持高光，在main里载入main_ex_with_sphmap.fx即可)</li>
+<li>在MMD加载ray.x以及ray_controller.pmx</li>
+<li>关闭MMD的抗锯齿，关掉模型轮廓线（场景载入后也要关）</li>
+<li><p>载入天空盒GrandCanyon中的skybox_hdr.pmx文件</p>
+<blockquote>
+<p>4-1.在MME里 Main选项卡中给天空盒载入skybox_hdr.fx<br>4-2.在EnvLightMap中给天空盒载入skylighting_hdr.fx<br>4-3.在MaterialMap中给天空盒载入\Materials\material_skybox.fx<br>4-4.在FogMap中给天空盒载入xx_fog.fx（如果需要用或者有的话）<br>4-5.在&lt;背景-模型描绘顺序&gt;将天空盒调到第一（就是把skybox.pmx调到第一位）<br>（描绘顺序1天空盒2场景3模型）<br>4-6.在skybox.pmx的模型上控制天空盒效果</p>
+</blockquote>
+</li>
+<li><p>载入已去高光贴图的模型文件model.pmx<br>5-1.在Main中给人物模型载入main.fx<br>5-2.在MaterialMap中把人物模型展开<br>5-3.给人物模型各个部位打上对应材质</p>
+<blockquote>
+<p> a)给身体部位加载\Materials\Skin\TDA\material_TDA_body.fx<br>b)给脸的部位加载\Materials\Skin\TDA\material_TDA_face.fx<br> c)给头发部位加载\Materials\Hair\material_hair.fx<br> d)给衣服部位加载\Materials\Cloth\material_cloth.fx<br> e)给发光部位加载\Materials\Emissive\Fixed Color xN\material_albedo_xN.fx<br> f)给光滑部位加载\Materials\ClearCoat\material_albedo.fx<br>  g)给金属部位加载\Materials\Metallic\Flat ingot smooth\material_smooth_metal.fx</p>
+</blockquote>
+</li>
+<li><p>删除或无效场景的高光贴图并保存为stage.pmx</p>
+</li>
+<li>重复与人物模型相同的操作</li>
+<li>调整ray_controller.pmx和skybox.pmx的参数使画面达到较好的效果</li>
+</ol>
+<hr>
+<h4 id="自定义天空盒的方法"><a href="#自定义天空盒的方法" class="headerlink" title="自定义天空盒的方法"></a>自定义天空盒的方法</h4><ol>
+<li>先备份一份\Skybox\GrandCanyon</li>
+<li>重命名为任意你喜欢的名字，如newskybox</li>
+<li>上Nico静画搜索下载某个天空盒的图片并用PS打开</li>
+<li>在菜单 图像—模式 中选择32位高位深色彩通道模式</li>
+<li>选择 图像—图像大小，调整成指定的图片比例：4000宽x2000高</li>
+<li>将天空盒图片存储导出为HDR格式</li>
+<li>解压\Tools\cmft_rgbt_x1024.zip压缩包</li>
+<li>将刚刚导出的HDR文件拖在\Tools\cmft_rgbt_x1024\cmft_x64_high_rgbt.exe上</li>
+<li>接着会弹出一个黑色窗口，等待他处理完毕，处理完毕后会在HDR同路径生成三个文件</li>
+<li>将生成的三个文件覆盖到\Skybox\newskybox\texture中</li>
+<li>自定义天空盒完毕，可以在Ray中使用了，使用方法不变</li>
+</ol>
+
+      
+    </div>
+
+    <footer class="article-footer">
+
+      <div class="large-4 columns article-share article-share-fb"><a href="https://www.facebook.com/sharer/sharer.php?u=http://cuxevrip.top/Ray-Tech-1/" url="http://cuxevrip.top/Ray-Tech-1/" data-id="cj6j484s20004xkao9jghjrsq" class="article-share-link">Share on Facebook</a>
+      </div>
+
+      <div class="large-4 columns article-share article-share-tw"><a href='https://twitter.com/home?status=Ray Tech 1 http://cuxevrip.top/Ray-Tech-1/ '></a></div>
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MMD/">MMD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ray/">ray</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-MMD-Tech-Collect" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-main">
+
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/MMD-Tech-Collect/">MMD Tech Collect</a>
+    </h1>
+  
+
+      </header>
+      <hr />
+    
+
+    <div class="article-meta">
+      <span class="article-datetime">
+      <a href="/MMD-Tech-Collect/" class="article-date">
+  <time datetime="2017-08-19T08:28:45.000Z" itemprop="datePublished">8月 19日, 2017</time>
 </a>
+      </span>
+      
+    </div>
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MMD教程收集"><a href="#MMD教程收集" class="headerlink" title="MMD教程收集"></a>MMD教程收集</h1><hr>
+<h2 id="MMD基础教程"><a href="#MMD基础教程" class="headerlink" title="MMD基础教程"></a>MMD基础教程</h2><ul>
+<li>『基础教学第一章』MMD各版本的下载及常见问题解决方法<br><a href="http://bakakin.lofter.com/post/400994_25fea12" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_25fea12</a></li>
+<li>『基础教学第二章』MMD基本功能详解<br><a href="http://bakakin.lofter.com/post/400994_2602602" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_2602602</a></li>
+<li>『基础教学第三章』MMD制作流程展示<br><a href="http://bakakin.lofter.com/post/400994_2612f2a" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_2612f2a</a></li>
+<li>『MMD从基础到进阶』教程资源整合 / 常见问题解答 / 国内原创作品推荐<br><a href="http://bakakin.lofter.com/post/400994_16e51be" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_16e51be</a></li>
+<li>如何搜索资源，查看模型的配布使用规则，编写完整的借物表<br><a href="http://bakakin.lofter.com/post/400994_6b051ca" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_6b051ca</a></li>
+<li>『Bandizip』可转换编码并批量处理各种格式的解压软件<br><a href="http://bakakin.lofter.com/post/400994_16e54d3" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_16e54d3</a></li>
+<li>『Mikumikudance 926 64位 Emil繁体汉化版 正式发布』<br><a href="http://bakakin.lofter.com/post/400994_ecce4a0" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_ecce4a0</a></li>
+</ul>
+<hr>
+<ul>
+<li>【蛋疼】MMD动作教程<br><a href="http://www.bilibili.com/video/av567875/" target="_blank" rel="external">http://www.bilibili.com/video/av567875/</a></li>
+<li>【蛋疼】MMD镜头与曲线教程<br><a href="http://www.bilibili.com/video/av591416/" target="_blank" rel="external">http://www.bilibili.com/video/av591416/</a></li>
+<li>【蛋疼】MMD附件与特效教程<br><a href="http://www.bilibili.com/video/av632051/" target="_blank" rel="external">http://www.bilibili.com/video/av632051/</a></li>
+<li>【蛋疼】MMD曲线基础<br><a href="http://www.bilibili.com/video/av570037/" target="_blank" rel="external">http://www.bilibili.com/video/av570037/</a></li>
+</ul>
+<hr>
+<ul>
+<li>【潇兵长】『MMD教程2017年新版』最详细的MMD教程<br><a href="http://www.bilibili.com/video/av10527548/" target="_blank" rel="external">http://www.bilibili.com/video/av10527548/</a></li>
+<li>【散司机】从零开始的MMD制作<br><a href="http://www.bilibili.com/video/av10073008/" target="_blank" rel="external">http://www.bilibili.com/video/av10073008/</a></li>
+<li>【散司机】MMD-MME特效讲解篇（1）【轨迹线】<br><a href="http://www.bilibili.com/video/av10465428/" target="_blank" rel="external">http://www.bilibili.com/video/av10465428/</a></li>
+<li>【散司机】MMD-MME特效讲解篇（2）【常用滤镜】<br><a href="http://www.bilibili.com/video/av10820016/" target="_blank" rel="external">http://www.bilibili.com/video/av10820016/</a></li>
+<li>【散司机】关于MMD画质的那些事~画质优化小技巧<br><a href="http://www.bilibili.com/video/av10484253/" target="_blank" rel="external">http://www.bilibili.com/video/av10484253/</a></li>
+</ul>
+<hr>
+<ul>
+<li>【RedialC】MMD从零入门教程—RC手把手带你入门MMD<br><a href="https://www.bilibili.com/video/av12577403/" target="_blank" rel="external">https://www.bilibili.com/video/av12577403/</a></li>
+<li>【CY】MMD动作制作新人入门级教程<br><a href="http://space.bilibili.com/8070827#!/channel/detail?cid=1890" target="_blank" rel="external">http://space.bilibili.com/8070827#!/channel/detail?cid=1890</a></li>
+</ul>
+<hr>
+<h2 id="MMD入门渲染"><a href="#MMD入门渲染" class="headerlink" title="MMD入门渲染"></a>MMD入门渲染</h2><ul>
+<li>【某K】MME学习之一：そぼろ<br><a href="http://blog.sina.com.cn/s/blog_ba9e484f0101j6o5.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_ba9e484f0101j6o5.html</a></li>
+<li>【某K】MME学习之二：針金P<br><a href="http://blog.sina.com.cn/s/blog_ba9e484f0101j71s.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_ba9e484f0101j71s.html</a></li>
+<li>【某K】MME学习之三：ビームマンP<br><a href="http://blog.sina.com.cn/s/blog_ba9e484f0101j7sm.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_ba9e484f0101j7sm.html</a></li>
+<li>【慕容垂雪】关于发光特效AutoLuminous4的错9zuo0误(si)打开方式<br><a href="http://tieba.baidu.com/p/3152462202" target="_blank" rel="external">http://tieba.baidu.com/p/3152462202</a></li>
+</ul>
+<hr>
+<ul>
+<li>【iRon0129】『新手向』MME渲染入门级教程及MME相关资源整理<br><a href="http://tieba.baidu.com/p/2923832414" target="_blank" rel="external">http://tieba.baidu.com/p/2923832414</a></li>
+<li>【夏夜】NCHLShader2的使用方法<br><a href="http://tieba.baidu.com/p/3352449670" target="_blank" rel="external">http://tieba.baidu.com/p/3352449670</a></li>
+<li>【五音】『零推荐』【MMD教程向】觅心猎手~弱音『进阶渲染教程』<br><a href="http://www.bilibili.com/video/av8159574/" target="_blank" rel="external">http://www.bilibili.com/video/av8159574/</a></li>
+<li>【予言】P渲的使用方法<br><a href="http://tieba.baidu.com/p/2934739700" target="_blank" rel="external">http://tieba.baidu.com/p/2934739700</a></li>
+<li>【小行家】分享一个渲染–AutoReflection<br><a href="http://tieba.baidu.com/p/5063373399?pid=106053472759" target="_blank" rel="external">http://tieba.baidu.com/p/5063373399?pid=106053472759</a></li>
+<li>【RITINI】分享一下自己的T渲用法♣<br><a href="http://tieba.baidu.com/p/4657702637" target="_blank" rel="external">http://tieba.baidu.com/p/4657702637</a></li>
+<li>【CME6大神犬】动画风格渲染教程<br><a href="http://www.bilibili.com/video/av3045734/" target="_blank" rel="external">http://www.bilibili.com/video/av3045734/</a></li>
+<li>【0Shaya0】手绘风效果<br><a href="https://tieba.baidu.com/p/3971331412" target="_blank" rel="external">https://tieba.baidu.com/p/3971331412</a></li>
+<li>【林林林北死鹹魚】EM粒子特效使用教程<br><a href="http://www.bilibili.com/video/av12223636/" target="_blank" rel="external">http://www.bilibili.com/video/av12223636/</a></li>
+</ul>
+<hr>
+<ul>
+<li>【Charle】N渲染基础—进阶教程【第一课】<br><a href="https://www.bilibili.com/video/av4969518/" target="_blank" rel="external">https://www.bilibili.com/video/av4969518/</a></li>
+<li>【Charle】N渲染（NCHLShader2）进阶教程。背光以及参数概念【第二课】<br><a href="https://www.bilibili.com/video/av6555678/" target="_blank" rel="external">https://www.bilibili.com/video/av6555678/</a></li>
+<li>【SUVEN】我知道你想学MMD的渲染！快点进来吧【N3+C&amp;教程】<br><a href="http://tieba.baidu.com/p/4754614018" target="_blank" rel="external">http://tieba.baidu.com/p/4754614018</a></li>
+<li>【iRon0129】丝袜化MME【足控福利】【绅士必入】<br><a href="http://tieba.baidu.com/p/3159024840" target="_blank" rel="external">http://tieba.baidu.com/p/3159024840</a></li>
+</ul>
+<hr>
+<h2 id="MMD进阶渲染"><a href="#MMD进阶渲染" class="headerlink" title="MMD进阶渲染"></a>MMD进阶渲染</h2><ul>
+<li>【Charle - ik渲染教程】关于ikPolishShader物理基本理论知识讲解篇【第一课】<br><a href="https://www.bilibili.com/video/av9585986/" target="_blank" rel="external">https://www.bilibili.com/video/av9585986/</a></li>
+<li>【Charle - ik渲染教程】ikPolishShader零基础入门篇教程【第二课】<br><a href="https://www.bilibili.com/video/av9651008/" target="_blank" rel="external">https://www.bilibili.com/video/av9651008/</a></li>
+<li>【Charle - ik渲染教程】ikPolishShader进阶材质篇渲染讲解【第三课-完结】<br><a href="https://www.bilibili.com/video/av12663094/" target="_blank" rel="external">https://www.bilibili.com/video/av12663094/</a></li>
+</ul>
+<hr>
+<ul>
+<li>【RedialC】新手进阶1-背景虚化|体积光|模型绑定|描绘顺序系统介绍<br><a href="https://www.bilibili.com/video/av11652436/" target="_blank" rel="external">https://www.bilibili.com/video/av11652436/</a></li>
+<li>【RedialC】新手进阶2-相机绑定|光晕|地面反射<br><a href="https://www.bilibili.com/video/av11783597/" target="_blank" rel="external">https://www.bilibili.com/video/av11783597/</a></li>
+<li>【RedialC】新手进阶3-水面|自发光|阳光照射<br><a href="https://www.bilibili.com/video/av12361987/" target="_blank" rel="external">https://www.bilibili.com/video/av12361987/</a></li>
+<li>【RedialC】爱酱都能学会的Ray渲教程 {Ray_1.3.0}<br><a href="https://www.bilibili.com/video/av10181955" target="_blank" rel="external">https://www.bilibili.com/video/av10181955</a></li>
+<li>【RedialC】『轻松穿越次元壁』MMD镜头追踪&amp;实景渲染教程<br><a href="https://www.bilibili.com/video/av8272626/" target="_blank" rel="external">https://www.bilibili.com/video/av8272626/</a></li>
+<li>【RedialC】『MMD实景合成教程』基于Ray渲的新版实景合成<br><a href="https://www.bilibili.com/video/av12645015/" target="_blank" rel="external">https://www.bilibili.com/video/av12645015/</a></li>
+</ul>
+<hr>
+<ul>
+<li>【Rui】Ray-MMD官方图文教程<br><a href="https://github.com/ray-cast/ray-mmd/wiki/0.0-%E6%95%99%E7%A8%8B" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/wiki/0.0-%E6%95%99%E7%A8%8B</a></li>
+<li>【TerayTech】Ray-MMD官方教程<br><a href="https://space.bilibili.com/24434095#!/channel/detail?cid=18483" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=18483</a></li>
+<li>【TerayTech】UE4 MMD 联动教程<br><a href="https://space.bilibili.com/24434095#!/channel/detail?cid=9465" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=9465</a></li>
+<li>【TerayTech】CE MMD 渲染技术<br><a href="https://space.bilibili.com/24434095#!/channel/detail?cid=10195" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=10195</a></li>
+<li>『点歪技能树教学第一章』把MMD视频导入C4D渲染实例『MMDBRIDGE』<br><a href="http://bakakin.lofter.com/post/400994_e48fb6c" target="_blank" rel="external">http://bakakin.lofter.com/post/400994_e48fb6c</a></li>
+</ul>
+<hr>
+<ul>
+<li>【罩杯丶D】MMD法线教程<br><a href="http://www.bilibili.com/video/av9090363/" target="_blank" rel="external">http://www.bilibili.com/video/av9090363/</a></li>
+<li>【白痴毛】如何在各大主流渲染里使用法线贴图【法线贴图到底是个啥】<br><a href="http://tieba.baidu.com/p/4919385263" target="_blank" rel="external">http://tieba.baidu.com/p/4919385263</a></li>
+<li>【二狗】法线贴图原理与制作粗解<br><a href="http://tieba.baidu.com/p/4253979124" target="_blank" rel="external">http://tieba.baidu.com/p/4253979124</a></li>
+<li>【七夜】给模型嵌入自动呼吸引擎<br><a href="http://www.bilibili.com/video/av8775260" target="_blank" rel="external">http://www.bilibili.com/video/av8775260</a></li>
+</ul>
+<hr>
+<h2 id="MMD改模建模入门"><a href="#MMD改模建模入门" class="headerlink" title="MMD改模建模入门"></a>MMD改模建模入门</h2><ul>
+<li>【天尊】PmdEditor简易操作方式<br><a href="http://tieba.baidu.com/p/1562788246" target="_blank" rel="external">http://tieba.baidu.com/p/1562788246</a></li>
+<li>【Angle丶忆】PmdEditor自学入门教程系列<br><a href="http://www.bilibili.com/video/av3246647/" target="_blank" rel="external">http://www.bilibili.com/video/av3246647/</a></li>
+<li>【抖M】PE相关概念（误）<br><a href="http://konobaka.lofter.com/post/1cefaa3a_60ac434" target="_blank" rel="external">http://konobaka.lofter.com/post/1cefaa3a_60ac434</a></li>
+<li>【Emil】PE权重介绍与简单操作演示<br><a href="http://konobaka.lofter.com/post/1cefaa3a_5e596e2" target="_blank" rel="external">http://konobaka.lofter.com/post/1cefaa3a_5e596e2</a></li>
+<li>【杜总】镜像权重教学<br><a href="http://tieba.baidu.com/p/2904318290" target="_blank" rel="external">http://tieba.baidu.com/p/2904318290</a></li>
+<li>【欣泪】关于MMD模型建模以及PE的介绍和操作<br><a href="https://tieba.baidu.com/p/3365681127" target="_blank" rel="external">https://tieba.baidu.com/p/3365681127</a></li>
+</ul>
+<hr>
+<ul>
+<li>【句号君小雨】『MMD改模教程』如何用PmxEditor换头【基础•入门•新手向】<br><a href="http://www.bilibili.com/video/av2319172/" target="_blank" rel="external">http://www.bilibili.com/video/av2319172/</a></li>
+<li>【句号君小雨】PE换头术改良版+异色瞳修改方法&amp;MMD扣嘴型+动作反转方法<br><a href="http://www.bilibili.com/video/av3559667" target="_blank" rel="external">http://www.bilibili.com/video/av3559667</a></li>
+<li>【抖M】PE换脑袋的实例教程<br><a href="http://konobaka.lofter.com/post/1cefaa3a_60ac43f" target="_blank" rel="external">http://konobaka.lofter.com/post/1cefaa3a_60ac43f</a></li>
+</ul>
+<hr>
+<ul>
+<li>【iRon0129】『PE插件』贴图UV编辑器【插件教程/下载】<br><a href="http://tieba.baidu.com/p/3657064922" target="_blank" rel="external">http://tieba.baidu.com/p/3657064922</a></li>
+<li>【iRon0129】『PE插件』曲面自动设定——给裙子绑骨做物理【教程/下载】<br><a href="http://tieba.baidu.com/p/3514377237" target="_blank" rel="external">http://tieba.baidu.com/p/3514377237</a></li>
+<li>【秋天の戀愛】『PE教程』如何用[曲面自动追加插件]给模型头发上物理<br><a href="http://tieba.baidu.com/p/3726213767" target="_blank" rel="external">http://tieba.baidu.com/p/3726213767</a></li>
+</ul>
+<hr>
+<ul>
+<li>【水杉吧主】<br><a href="http://space.bilibili.com/4730878/#!/index" target="_blank" rel="external">http://space.bilibili.com/4730878/#!/index</a></li>
+<li>【小熊】水杉简单教程<br><a href="http://space.bilibili.com/30847042#!/channel/detail?cid=2785" target="_blank" rel="external">http://space.bilibili.com/30847042#!/channel/detail?cid=2785</a></li>
+<li>【荞麦面】水杉教程合集<br><a href="http://www.bilibili.com/video/av6867775/" target="_blank" rel="external">http://www.bilibili.com/video/av6867775/</a></li>
+<li>【浅蓝】MMD建模等教程<br><a href="http://space.bilibili.com/1795246#!/video?keyword=%E6%95%99%E7%A8%8B" target="_blank" rel="external">http://space.bilibili.com/1795246#!/video?keyword=%E6%95%99%E7%A8%8B</a></li>
+<li>【如诩】水杉建模教程<br><a href="https://space.bilibili.com/326702" target="_blank" rel="external">https://space.bilibili.com/326702</a></li>
+</ul>
+<hr>
+
+      
+    </div>
+
+    <footer class="article-footer">
+
+      <div class="large-4 columns article-share article-share-fb"><a href="https://www.facebook.com/sharer/sharer.php?u=http://cuxevrip.top/MMD-Tech-Collect/" url="http://cuxevrip.top/MMD-Tech-Collect/" data-id="cj6j484s50005xkaoy810qe73" class="article-share-link">Share on Facebook</a>
+      </div>
+
+      <div class="large-4 columns article-share article-share-tw"><a href='https://twitter.com/home?status=MMD Tech Collect http://cuxevrip.top/MMD-Tech-Collect/ '></a></div>
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MMD/">MMD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+  
+
+
+
+
+
+        </section>
+
         
+          <aside id="sidebar" class="medium-4 large-4 columns">
+  
+    
+
+  
+    
+  <div class="widget-wrap subheading">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MMD/">MMD</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ray/">ray</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">4</span></li></ul>
     </div>
-</div>
+  </div>
 
-                    
-                    
-                
-                    
-                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/Proper-Noun-Introduction/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                    <div class="column is-4-desktop is-5-tablet post-avatar is-hidden-mobile"
-                                         style="margin: 10px; background-size: cover;background-image: url('http://i2.bvimg.com/607380/664b9df123fb9e13.jpg')">
-                                    </div>
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>Some Proper Noun Introduction</h3>
-                                        
-                                        <p>
-                                            
-                                                <span class="tag is-post-tag">MMD</span>
-                                            
-                                                <span class="tag is-post-tag">教程</span>
-                                            
-                                                <span class="tag is-post-tag">ray</span>
-                                            
-                                        </p>
-                                        <p>
-                                            渲染专业术语的简单介绍渲染有很多专业术语，需要先对这些术语有一个简单的概念理解才能更好的学习渲染.本篇内容只是非常随意的抽取一些文字和图片资料帮助大家对专业术语有一个简单的理解，内容并不严谨，如有什么不正确的地方也请dalao们见谅.
 
-环境光遮蔽英文名Ambient Occlusion，简称AOAO是来描绘物体和物体相交或靠近的时候遮挡周围漫反射光线的..
-                                        </p>
-                                        <p>2017-08-19</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                    
-                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/Ray-Tech-1/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>Ray Tech 1</h3>
-                                        
-                                        <p>
-                                            
-                                                <span class="tag is-post-tag">MMD</span>
-                                            
-                                                <span class="tag is-post-tag">教程</span>
-                                            
-                                                <span class="tag is-post-tag">ray</span>
-                                            
-                                        </p>
-                                        <p>
-                                            Ray渲染基础教程一
-Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilib..
-                                        </p>
-                                        <p>2017-08-19</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                    
-                        <div class="content-box  " style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/MMD-Tech-Collect/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>MMD Tech Collect</h3>
-                                        
-                                        <p>
-                                            
-                                                <span class="tag is-post-tag">MMD</span>
-                                            
-                                                <span class="tag is-post-tag">教程</span>
-                                            
-                                        </p>
-                                        <p>
-                                            MMD教程收集
-MMD基础教程
-『基础教学第一章』MMD各版本的下载及常见问题解决方法http://bakakin.lofter.com/post/400994_25fea12
-『基础教学第二章』MMD基本功能详解http://bakakin.lofter.com/post/400994_2602602
-『基础教学第三章』MMD制作流程展示http://..
-                                        </p>
-                                        <p>2017-08-19</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                <!--翻頁-->
-                <nav class="pagination is-flex" style="justify-content: flex-end">
-                    
-                        
-                        
-                    
-                </nav>
-            </section>
-            
-                <style>
-    /*user info start*/
-    .user-info {
-        padding: 15px 0 0;
-    }
-
-    .user-info .avatar {
-        width: 155px;
-        height: 155px;
-        border-radius: 50%;
-    }
-
-    .sns-container {
-        flex-wrap: wrap;
-    }
-
-    .sns-container a{
-        color: black;
-    }
-    /*user info end*/
-
-    /*Tag start*/
-    #tag_cloud .tags-item{
-        display: inline-block;
-        color: #000;
-        border: 1px solid gray;
-
-        margin: 4px 2px;
-        padding: 0 4px;
-        border-radius: 6px;
-    }
-    /*Tag end*/
-
-    /*Site box start*/
-    .site-box {
-        height: 60px;
-    }
-    /*Site box end*/
-
-    .category-list-item,
-    .archive-list-item {
-        display: flex;
-        margin-bottom: 4px;
-        justify-content: space-between;
-    }
-    .category-list-link,
-    .archive-list-link {
-        color: black;
-    }
-
-    .category-list-count,
-    .archive-list-count {
-        width: 32px;
-        text-align: center;
-        border-radius: 4px;
-        color: #fff;
-        background-color: gray;
-    }
-</style>
-<aside class="column is-hidden-touch is-3" style="max-width: 280px; min-width: 230px">
-    <div class="content-box user-info">
-        <div class="has-padding">
-            <header class="has-text-centered">
-                <img class="avatar" src="http://i1.bvimg.com/607380/2b355dd6386b922a.jpg">
-            </header>
-            <section class="has-text-centered">
-                <h3><strong>Cux</strong></h3>
-                <p class="sub-title">Welcome!</p>
-                
-            </section>
-        </div>
-        <div class="top-line">
-            <ul class="sns-container justify-center is-flex has-padding">
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-            </ul>
-        </div>
+  
+    
+  <div class="widget-wrap subheading">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/MMD/" style="font-size: 20px;">MMD</a> <a href="/tags/ray/" style="font-size: 10px;">ray</a> <a href="/tags/教程/" style="font-size: 20px;">教程</a>
     </div>
-    <div class="content-box">
-        <!--post数量和tag category 数量-->
-        <div class="site-box is-flex">
-            <div class="flex-1 is-flex flex-column center full-height right-line">
-                <strong>4</strong>
-                <p>Posts</p>
-            </div>
-            <div class="flex-1 is-flex flex-column center full-height">
-                <strong>3</strong>
-                <p>Tags</p>
-            </div>
-        </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title subheading">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">4</span></li></ul>
     </div>
-    <div id='tag_cloud' class="content-inner content-box">
-        <div class="has-text-centered">
-            <strong>Tags</strong>
-        </div>
-        <div class="content-inner is-flex flex-wrap justify-space-between">
-            
-                <a class="tags-item" href="tags/MMD/" title="MMD" rel="4">
-                    MMD
-                </a>
-            
-                <a class="tags-item" href="tags/教程/" title="教程" rel="4">
-                    教程
-                </a>
-            
-                <a class="tags-item" href="tags/ray/" title="ray" rel="3">
-                    ray
-                </a>
-            
-        </div>
+  </div>
+
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title subheading">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/Ray-Tech-2/">Ray Tech 2</a>
+          </li>
+        
+          <li>
+            <a href="/Proper-Noun-Introduction/">Some Proper Noun Introduction</a>
+          </li>
+        
+          <li>
+            <a href="/Ray-Tech-1/">Ray Tech 1</a>
+          </li>
+        
+          <li>
+            <a href="/MMD-Tech-Collect/">MMD Tech Collect</a>
+          </li>
+        
+      </ul>
     </div>
-    <div class="content-inner content-box">
-        <div class="has-text-centered">
-            <strong>Categories</strong>
-        </div>
-        <div class="content-inner">
-            
-        </div>
-    </div>
-    <div class="content-inner content-box">
-        <div class="has-text-centered">
-            <strong>Archives</strong>
-        </div>
-        <div class="content-inner">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">4</span></li></ul>
-        </div>
-    </div>
+  </div>
+
+
+  
 </aside>
-            
-        </div>
-    </div>
-</div>
+
+        
 
       </div>
-  </div>
-  <style>
-  #footer {
-    min-height: 10vh;
-    background: black;
-    color: #fff;
-  }
 
-  #footer a {
-    color: #e1e1e1;
-  }
-</style>
-<footer id="footer" class="has-text-centered is-flex center">
-  <div class="container has-padding">
-    <div>
-      <div>
-        <!--请您保留作者署名, 主题制作来之不易-->
-        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
-        <br>
-        Copyright © 卡斯 2017
-        <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-      </div>
+      <nav id="mobile-nav" class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+  
+    <li role="menuitem">
+      <a href="/" class="mobile-nav-link">Home</a>
+    </li>
+  
+    <li role="menuitem">
+      <a href="/MMD" class="mobile-nav-link">MMD</a>
+    </li>
+  
+    <li role="menuitem">
+      <a href="/archives" class="mobile-nav-link">Archives</a>
+    </li>
+  
+  </ul>
+</nav>
+
+
+      <hr />
+      <footer id="footer" class="row l-footer border-top">
+
+  <div class="show-for-sr">
+  
+  </div>
+
+  <div class="l-footer-body">
+    <div id="footer-info" class="large-6 columns">
+      &copy; 2017 Cux<br>
+    </div>
+    <div class="large-6 columns text-right">
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
+
+
 </footer>
 
-<script src="/js/search_core.js"></script>
+    </div>
+
+
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+</script>
+
+<script src="/lib/foundation/js/foundation.js"></script>
+<script src="/lib/foundation/js/foundation/foundation.topbar.js"></script>
+<script src="/lib/foundation/js/foundation/foundation.offcanvas.js"></script>
+<script>
+$(document).foundation();
+</script>
 <script src="/js/script.js"></script>
 
-</body>
-</html>
+
+  </div>
+
+
+<!-- Enable Browser Sync -->
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.6.11.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+<!-- /Enable Browser Sync -->
+
+</div></div> <!--OffCanvas Div's-->
+</body></html>

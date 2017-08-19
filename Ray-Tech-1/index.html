@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html class="full-height">
+<html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
+
   <title>Ray Tech 1 | Cux&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Ray渲染基础教程一 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/cha">
-<meta name="keywords" content="MMD,教程,ray">
+<meta name="keywords" content="ray,MMD,教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ray Tech 1">
 <meta property="og:url" content="http://cuxevrip.top/Ray-Tech-1/index.html">
@@ -21,136 +19,133 @@
 <meta name="twitter:title" content="Ray Tech 1">
 <meta name="twitter:description" content="Ray渲染基础教程一 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/cha">
   
-    <link rel="alternate" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/nav.css">
-<link rel="stylesheet" href="/css/layout.css">
+  <!--<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="/./lib/foundation/css/normalize.css">
+<link rel="stylesheet" href="/./lib/foundation/css/foundation.css">
+  <link rel="stylesheet" href="/./css/style.css">
   
 
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
-  <div class="container">
-    <nav class="nav">
-         <div class="nav-left">
-            <a href="/" class="nav-item" style="font-size: 20px;">
-              <span class="logo">Cux</span>'s Blog
-            </a>
-         </div>
-        <div class="nav-center is-hidden position-relative" id="search_container">
-            <div class="nav-item full-width full-height">
-                <i class="fa fa-search has-padding" aria-hidden="true"></i>
-                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
-                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-            </div>
-            <div id="search_result"></div>
-        </div>
-        <div class="nav-right nav-menu">
-            <a class="nav-item" id="search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </a>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+
+  <div id="container" class="page">
+
+    <div>
+      <header class="l-header">
+  <div class="l-banner"></div>
+
+  <div class="contain-to-grid sticky">
+
+      <nav id="main-nav" class="top-bar">
+        <ul class="title-area">
+            <li class="name">
+              <h1 class="logo-wrap">
+                <a href="/" id="logo">Cux&#39;s Blog</a>
+              </h1>
+              
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+              <a role="button" href="#idOfRightMenu" class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </li>
+          </ul>
+
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
             
-            <a class="nav-item" href="/">
-                Home
-            </a>
+            <li>
+              <a class="main-nav-link" href="/">Home</a>
+            </li>
             
-            <a class="nav-item" href="/MMD">
-                MMD
-            </a>
+            <li>
+              <a class="main-nav-link" href="/MMD">MMD</a>
+            </li>
             
-        </div>
-        <span class="nav-toggle" id="navMenuDropdown">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            <li>
+              <a class="main-nav-link" href="/archives">Archives</a>
+            </li>
             
-            <a class="nav-item flex-1" href="/">
-                Home
-            </a>
-            
-            <a class="nav-item flex-1" href="/MMD">
-                MMD
-            </a>
-            
-        </div>
-    </nav>
+          </ul>
+        </section>
+
+
+      <ul id="nav-search-form" class="left">
+        <li>
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        </li>
+
+        <li class="has-form">
+            <div class="l-search">
+  <form class="row collapse" action="//google.com/search" method="get" accept-charset="utf-8">
+    <div class="large-8 small-9 columns">
+      <input type="search" name="q" results="0" placeholder="search">
+    </div>
+    <div class="large-4 small-3 columns">
+      <button href="#" class="button expand">Search</button>
+    </div>
+    <input type="hidden" name="q" value="site:cuxevrip.top">
+  </form>
+</div>
+
+        </li>
+      </ul>
+
+      </nav>
+
+    </div>
+
   </div>
 </header>
 
-  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      <div class="main-inner-content">
-          <!--博文页面-->
 
-<style>
-    .header-box {
-        height: 370px;
-        filter: blur(10px);
-        background-size: cover;
-        background-color: lightsteelblue;
-    }
+      <div class="l-main row">
 
-    .post-box {
-        padding: 15px;
-        padding-top: 60px;
-        min-height: 80vh;
-        margin-top: -200px;
-        border-radius: 4px;
-        background-color: rgba(255,255,255,.8);
-    }
+        <section id="main" class="medium-8 large-8 columns">
+          <article id="post-Ray-Tech-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-main">
 
-    .post-avatar {
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-    }
+    
 
-    .flow-chart {
-        text-align: center;
-    }
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Ray Tech 1
+    </h1>
+  
 
-    img[alt="post-cover"] {
-        display: none;
-    }
-</style>
-<header>
-    <div id="header_box" class="header-box"></div>
-</header>
-<section>
-    <div class="container post-box">
-        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
-            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
-                <strong>Ray Tech 1</strong>
-            </h1>
-            
-            <div class="is-flex align-center">
-                <img class="post-avatar" src="http://i1.bvimg.com/607380/2b355dd6386b922a.jpg">
-                <span style="padding:0 10px;"> <span class="sub-title">By</span> Cux</span>
-                <span class="post-date sub-title">at: 2017-08-19</span>
-            </div>
-            
-                <div>
-                    
-                         <a class="tag is-post-tag" href="/tags/MMD/">MMD</a>
-                    
-                         <a class="tag is-post-tag" href="/tags/教程/">教程</a>
-                    
-                         <a class="tag is-post-tag" href="/tags/ray/">ray</a>
-                    
-                </div>
-            
-        </div>
-        <div class="content" style="overflow: auto">
-            <h3 id="Ray渲染基础教程一"><a href="#Ray渲染基础教程一" class="headerlink" title="Ray渲染基础教程一"></a>Ray渲染基础教程一</h3><blockquote>
+      </header>
+      <hr />
+    
+
+    <div class="article-meta">
+      <span class="article-datetime">
+      <a href="/Ray-Tech-1/" class="article-date">
+  <time datetime="2017-08-19T08:45:39.000Z" itemprop="datePublished">8月 19日, 2017</time>
+</a>
+      </span>
+      
+    </div>
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Ray渲染基础教程一"><a href="#Ray渲染基础教程一" class="headerlink" title="Ray渲染基础教程一"></a>Ray渲染基础教程一</h3><blockquote>
 <p>Ray-mmd官方地址：<a href="https://github.com/ray-cast/ray-mmd" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd</a><br>更新信息：<a href="https://github.com/ray-cast/ray-mmd/releases" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/releases</a><br>官方wiki：<a href="https://github.com/ray-cast/ray-mmd/wiki" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/wiki</a><br>官方教程：<a href="https://space.bilibili.com/24434095#!/channel/detail?cid=18483" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=18483</a><br>RC教程：<a href="https://www.bilibili.com/video/av10181955/" target="_blank" rel="external">https://www.bilibili.com/video/av10181955/</a></p>
 </blockquote>
 <hr>
@@ -188,52 +183,190 @@
 <li>自定义天空盒完毕，可以在Ray中使用了，使用方法不变</li>
 </ol>
 
-        </div>
-        <div class="post-reply">
-            
-            
-        </div>
+      
     </div>
-</section>
-<script>
-    // 获取第一张图, 用以当封面背景图
-    var img = document.querySelectorAll('img')[1]
 
-    if (img) {
-        var header_box = document.querySelector('#header_box')
-        header_box.style.backgroundImage = 'url('+ img.src +')'
-    }
-</script>
+    <footer class="article-footer">
+
+      <div class="large-4 columns article-share article-share-fb"><a href="https://www.facebook.com/sharer/sharer.php?u=http://cuxevrip.top/Ray-Tech-1/" url="http://cuxevrip.top/Ray-Tech-1/" data-id="cj6j484s20004xkao9jghjrsq" class="article-share-link">Share on Facebook</a>
       </div>
+
+      <div class="large-4 columns article-share article-share-tw"><a href='https://twitter.com/home?status=Ray Tech 1 http://cuxevrip.top/Ray-Tech-1/ '></a></div>
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MMD/">MMD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ray/">ray</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+
+    </footer>
   </div>
-  <style>
-  #footer {
-    min-height: 10vh;
-    background: black;
-    color: #fff;
-  }
+  
+    
+<nav id="article-nav" class="row">
 
-  #footer a {
-    color: #e1e1e1;
-  }
-</style>
-<footer id="footer" class="has-text-centered is-flex center">
-  <div class="container has-padding">
-    <div>
-      <div>
-        <!--请您保留作者署名, 主题制作来之不易-->
-        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
-        <br>
-        Copyright © 卡斯 2017
-        <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  
+    <a href="/Proper-Noun-Introduction/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Some Proper Noun Introduction
+        
       </div>
+    </a>
+  
+
+  
+    <a href="/MMD-Tech-Collect/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">MMD Tech Collect</div>
+    </a>
+  
+
+</nav>
+
+
+  
+</article>
+
+
+
+        </section>
+
+        
+          <aside id="sidebar" class="medium-4 large-4 columns">
+  
+    
+
+  
+    
+  <div class="widget-wrap subheading">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MMD/">MMD</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ray/">ray</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">4</span></li></ul>
     </div>
   </div>
+
+
+  
+    
+  <div class="widget-wrap subheading">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/MMD/" style="font-size: 20px;">MMD</a> <a href="/tags/ray/" style="font-size: 10px;">ray</a> <a href="/tags/教程/" style="font-size: 20px;">教程</a>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title subheading">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title subheading">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/Ray-Tech-2/">Ray Tech 2</a>
+          </li>
+        
+          <li>
+            <a href="/Proper-Noun-Introduction/">Some Proper Noun Introduction</a>
+          </li>
+        
+          <li>
+            <a href="/Ray-Tech-1/">Ray Tech 1</a>
+          </li>
+        
+          <li>
+            <a href="/MMD-Tech-Collect/">MMD Tech Collect</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+
+        
+
+      </div>
+
+      <nav id="mobile-nav" class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+  
+    <li role="menuitem">
+      <a href="/" class="mobile-nav-link">Home</a>
+    </li>
+  
+    <li role="menuitem">
+      <a href="/MMD" class="mobile-nav-link">MMD</a>
+    </li>
+  
+    <li role="menuitem">
+      <a href="/archives" class="mobile-nav-link">Archives</a>
+    </li>
+  
+  </ul>
+</nav>
+
+
+      <hr />
+      <footer id="footer" class="row l-footer border-top">
+
+  <div class="show-for-sr">
+  
+  </div>
+
+  <div class="l-footer-body">
+    <div id="footer-info" class="large-6 columns">
+      &copy; 2017 Cux<br>
+    </div>
+    <div class="large-6 columns text-right">
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+
+
 </footer>
 
-<script src="/js/search_core.js"></script>
+    </div>
+
+
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+</script>
+
+<script src="/lib/foundation/js/foundation.js"></script>
+<script src="/lib/foundation/js/foundation/foundation.topbar.js"></script>
+<script src="/lib/foundation/js/foundation/foundation.offcanvas.js"></script>
+<script>
+$(document).foundation();
+</script>
 <script src="/js/script.js"></script>
 
-</body>
-</html>
+
+  </div>
+
+
+<!-- Enable Browser Sync -->
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.6.11.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+<!-- /Enable Browser Sync -->
+
+</div></div> <!--OffCanvas Div's-->
+</body></html>

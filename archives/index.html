@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html class="full-height">
+<html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
+
   <title>Archives | Cux&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
@@ -16,407 +14,334 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cux&#39;s Blog">
   
-    <link rel="alternate" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/nav.css">
-<link rel="stylesheet" href="/css/layout.css">
+  <!--<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="/./lib/foundation/css/normalize.css">
+<link rel="stylesheet" href="/./lib/foundation/css/foundation.css">
+  <link rel="stylesheet" href="/./css/style.css">
   
 
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
-  <div class="container">
-    <nav class="nav">
-         <div class="nav-left">
-            <a href="/" class="nav-item" style="font-size: 20px;">
-              <span class="logo">Cux</span>'s Blog
-            </a>
-         </div>
-        <div class="nav-center is-hidden position-relative" id="search_container">
-            <div class="nav-item full-width full-height">
-                <i class="fa fa-search has-padding" aria-hidden="true"></i>
-                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
-                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-            </div>
-            <div id="search_result"></div>
-        </div>
-        <div class="nav-right nav-menu">
-            <a class="nav-item" id="search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </a>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+
+  <div id="container" class="page">
+
+    <div>
+      <header class="l-header">
+  <div class="l-banner"></div>
+
+  <div class="contain-to-grid sticky">
+
+      <nav id="main-nav" class="top-bar">
+        <ul class="title-area">
+            <li class="name">
+              <h1 class="logo-wrap">
+                <a href="/" id="logo">Cux&#39;s Blog</a>
+              </h1>
+              
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+              <a role="button" href="#idOfRightMenu" class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </li>
+          </ul>
+
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
             
-            <a class="nav-item" href="/">
-                Home
-            </a>
+            <li>
+              <a class="main-nav-link" href="/">Home</a>
+            </li>
             
-            <a class="nav-item" href="/MMD">
-                MMD
-            </a>
+            <li>
+              <a class="main-nav-link" href="/MMD">MMD</a>
+            </li>
             
-        </div>
-        <span class="nav-toggle" id="navMenuDropdown">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            <li>
+              <a class="main-nav-link" href="/archives">Archives</a>
+            </li>
             
-            <a class="nav-item flex-1" href="/">
-                Home
-            </a>
-            
-            <a class="nav-item flex-1" href="/MMD">
-                MMD
-            </a>
-            
-        </div>
-    </nav>
+          </ul>
+        </section>
+
+
+      <ul id="nav-search-form" class="left">
+        <li>
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        </li>
+
+        <li class="has-form">
+            <div class="l-search">
+  <form class="row collapse" action="//google.com/search" method="get" accept-charset="utf-8">
+    <div class="large-8 small-9 columns">
+      <input type="search" name="q" results="0" placeholder="search">
+    </div>
+    <div class="large-4 small-3 columns">
+      <button href="#" class="button expand">Search</button>
+    </div>
+    <input type="hidden" name="q" value="site:cuxevrip.top">
+  </form>
+</div>
+
+        </li>
+      </ul>
+
+      </nav>
+
+    </div>
+
   </div>
 </header>
 
-  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      <div class="main-inner-content">
-          <style>
-    .post-hover:hover {
-        box-shadow: inset 0 0 100px #000;
-        transition: box-shadow .2s;
-    }
 
-    .sub-post-container .post-hover:hover h3 {
-        text-decoration: underline gray;
-    }
+      <div class="l-main row">
 
-
-    .primary-item-main {
-        height: 330px;
-        background-size: cover;
-    }
-
-    .primary-container .title,
-    .primary-container .sub-title,
-    .primary-container .post-content-text,
-    .primary-container .date {
-        color: #fff;
-    }
-
-    .post-content-text {
-        color: #f1f1f1!important;
-    }
-
-    .primary-container .post-hover {
-        background: black;
-    }
-
-    .content-bg-mask {
-        background: rgba(0,0,0,.4);
-    }
-
-</style>
-
-<div style="background: #f5f8f9;">
-    <div id="main-container" class="container" style="padding-top: 20px;">
-        <div class="is-flex main-content justify-center">
-            <section class="column is-9">
-                
-<div class="primary-container content-box is-flex-desktop clear-padding bottom-line" style="margin-bottom: 25px;">
-    <div class="column  is-7-desktop">
-        <a href="/Ray-Tech-2/">
-            <div class="full-height post-hover"
-                 style="
-                         background-image: url('');
-                         height: 350px;
-                         background-size: cover;
-                         background-repeat: no-repeat;
-                         ">
-                    <div class=" is-flex flex-column center content has-text-centered full-height has-padding content-bg-mask">
-                        <h1 class="title text-shadow" style="margin-bottom: 15px;">
-                            Ray Tech 2
-                        </h1>
-                        <div>
-                        
-                            `
-                                <span class="tag is-post-tag">MMD</span>
-                            `
-                                <span class="tag is-post-tag">教程</span>
-                            `
-                                <span class="tag is-post-tag">ray</span>
-                            
-                        
-                        </div>
-                        <p class="post-content-text is-marginless has-padding text-shadow">
-                            Ray渲染基础教程二ray_controller和Skybox控制器
-Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray..
-                        </p>
-                        <p class="date text-shadow">2017-08-19</p>
-                        <button class="button is-info is-small">Read More</button>
-                    </div>
-            </div>
-        </a>
-    </div>
-    <div class="column is-5 is-hidden-touch" style="padding-left: 0;">
-        <div class="full-height is-flex flex-column justify-space-between" style="min-height: 350px;">
-            
-                
-<a class="post-hover" href="/Proper-Noun-Introduction/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('http://i2.bvimg.com/607380/664b9df123fb9e13.jpg')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Some Proper Noun Introduction
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                渲染专业术语的简单介绍渲染有很多专业术语，需要先对这些术语有一个简单的概念理解才能更好的学习渲染..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
+        <section id="main" class="medium-8 large-8 columns">
+          
+  
+  
+    By Year
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
         </div>
-    </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/Ray-Tech-2/" class="archive-article-date">
+  <time datetime="2017-08-19T09:21:13.000Z" itemprop="datePublished">8月 19</time>
 </a>
-            
-            
-                
-<a class="post-hover" href="/Ray-Tech-1/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Ray Tech 1
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                Ray渲染基础教程一
-Ray-mmd官方地址：https://github.com/ray-ca..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
-        </div>
-    </div>
-</a>
-            
-        </div>
-    </div>
-    <div class="column is-12 is-hidden-desktop">
-        
-        
-<a class="post-hover" href="/Proper-Noun-Introduction/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('http://i2.bvimg.com/607380/664b9df123fb9e13.jpg')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Some Proper Noun Introduction
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                渲染专业术语的简单介绍渲染有很多专业术语，需要先对这些术语有一个简单的概念理解才能更好的学习渲染..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
-        </div>
-    </div>
-</a>
-        
-        
-        
-<a class="post-hover" href="/Ray-Tech-1/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                Ray Tech 1
-            </h3>
-            
-            
-            <span class="tag is-post-tag">MMD</span>
-            
-            <span class="tag is-post-tag">教程</span>
-            
-            <span class="tag is-post-tag">ray</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                Ray渲染基础教程一
-Ray-mmd官方地址：https://github.com/ray-ca..
-            </p>
-            <p class="date text-shadow is-marginless">2017-08-19</p>
-        </div>
-    </div>
-</a>
-        
-    </div>
-</div>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/Ray-Tech-2/">Ray Tech 2</a>
+    </h1>
+  
 
-                    
-                    
-                
-                    
-                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/Proper-Noun-Introduction/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                    <div class="column is-4-desktop is-5-tablet post-avatar is-hidden-mobile"
-                                         style="margin: 10px; background-size: cover;background-image: url('http://i2.bvimg.com/607380/664b9df123fb9e13.jpg')">
-                                    </div>
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>Some Proper Noun Introduction</h3>
-                                        
-                                        <p>
-                                            
-                                                <span class="tag is-post-tag">MMD</span>
-                                            
-                                                <span class="tag is-post-tag">教程</span>
-                                            
-                                                <span class="tag is-post-tag">ray</span>
-                                            
-                                        </p>
-                                        <p>
-                                            渲染专业术语的简单介绍渲染有很多专业术语，需要先对这些术语有一个简单的概念理解才能更好的学习渲染.本篇内容只是非常随意的抽取一些文字和图片资料帮助大家对专业术语有一个简单的理解，内容并不严谨，如有什么不正确的地方也请dalao们见谅.
-
-环境光遮蔽英文名Ambient Occlusion，简称AOAO是来描绘物体和物体相交或靠近的时候遮挡周围漫反射光线的..
-                                        </p>
-                                        <p>2017-08-19</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                    
-                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/Ray-Tech-1/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>Ray Tech 1</h3>
-                                        
-                                        <p>
-                                            
-                                                <span class="tag is-post-tag">MMD</span>
-                                            
-                                                <span class="tag is-post-tag">教程</span>
-                                            
-                                                <span class="tag is-post-tag">ray</span>
-                                            
-                                        </p>
-                                        <p>
-                                            Ray渲染基础教程一
-Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilib..
-                                        </p>
-                                        <p>2017-08-19</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                    
-                        <div class="content-box  " style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/MMD-Tech-Collect/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>MMD Tech Collect</h3>
-                                        
-                                        <p>
-                                            
-                                                <span class="tag is-post-tag">MMD</span>
-                                            
-                                                <span class="tag is-post-tag">教程</span>
-                                            
-                                        </p>
-                                        <p>
-                                            MMD教程收集
-MMD基础教程
-『基础教学第一章』MMD各版本的下载及常见问题解决方法http://bakakin.lofter.com/post/400994_25fea12
-『基础教学第二章』MMD基本功能详解http://bakakin.lofter.com/post/400994_2602602
-『基础教学第三章』MMD制作流程展示http://..
-                                        </p>
-                                        <p>2017-08-19</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                <!--翻頁-->
-                <nav class="pagination is-flex" style="justify-content: flex-end">
-                    
-                </nav>
-            </section>
-            
-        </div>
-    </div>
-</div>
-
-      </div>
+    </header>
   </div>
-  <style>
-  #footer {
-    min-height: 10vh;
-    background: black;
-    color: #fff;
-  }
+</article>
+  
+    By Year
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/Proper-Noun-Introduction/" class="archive-article-date">
+  <time datetime="2017-08-19T08:59:52.000Z" itemprop="datePublished">8月 19</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/Proper-Noun-Introduction/">Some Proper Noun Introduction</a>
+    </h1>
+  
 
-  #footer a {
-    color: #e1e1e1;
-  }
-</style>
-<footer id="footer" class="has-text-centered is-flex center">
-  <div class="container has-padding">
-    <div>
-      <div>
-        <!--请您保留作者署名, 主题制作来之不易-->
-        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
-        <br>
-        Copyright © 卡斯 2017
-        <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-      </div>
+    </header>
+  </div>
+</article>
+  
+    By Year
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/Ray-Tech-1/" class="archive-article-date">
+  <time datetime="2017-08-19T08:45:39.000Z" itemprop="datePublished">8月 19</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/Ray-Tech-1/">Ray Tech 1</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    By Year
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/MMD-Tech-Collect/" class="archive-article-date">
+  <time datetime="2017-08-19T08:28:45.000Z" itemprop="datePublished">8月 19</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/MMD-Tech-Collect/">MMD Tech Collect</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
+
+
+        </section>
+
+        
+          <aside id="sidebar" class="medium-4 large-4 columns">
+  
+    
+
+  
+    
+  <div class="widget-wrap subheading">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MMD/">MMD</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ray/">ray</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">4</span></li></ul>
     </div>
   </div>
+
+
+  
+    
+  <div class="widget-wrap subheading">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/MMD/" style="font-size: 20px;">MMD</a> <a href="/tags/ray/" style="font-size: 10px;">ray</a> <a href="/tags/教程/" style="font-size: 20px;">教程</a>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title subheading">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title subheading">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/Ray-Tech-2/">Ray Tech 2</a>
+          </li>
+        
+          <li>
+            <a href="/Proper-Noun-Introduction/">Some Proper Noun Introduction</a>
+          </li>
+        
+          <li>
+            <a href="/Ray-Tech-1/">Ray Tech 1</a>
+          </li>
+        
+          <li>
+            <a href="/MMD-Tech-Collect/">MMD Tech Collect</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+
+        
+
+      </div>
+
+      <nav id="mobile-nav" class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+  
+    <li role="menuitem">
+      <a href="/" class="mobile-nav-link">Home</a>
+    </li>
+  
+    <li role="menuitem">
+      <a href="/MMD" class="mobile-nav-link">MMD</a>
+    </li>
+  
+    <li role="menuitem">
+      <a href="/archives" class="mobile-nav-link">Archives</a>
+    </li>
+  
+  </ul>
+</nav>
+
+
+      <hr />
+      <footer id="footer" class="row l-footer border-top">
+
+  <div class="show-for-sr">
+  
+  </div>
+
+  <div class="l-footer-body">
+    <div id="footer-info" class="large-6 columns">
+      &copy; 2017 Cux<br>
+    </div>
+    <div class="large-6 columns text-right">
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+
+
 </footer>
 
-<script src="/js/search_core.js"></script>
+    </div>
+
+
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+</script>
+
+<script src="/lib/foundation/js/foundation.js"></script>
+<script src="/lib/foundation/js/foundation/foundation.topbar.js"></script>
+<script src="/lib/foundation/js/foundation/foundation.offcanvas.js"></script>
+<script>
+$(document).foundation();
+</script>
 <script src="/js/script.js"></script>
 
-</body>
-</html>
+
+  </div>
+
+
+<!-- Enable Browser Sync -->
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.6.11.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+<!-- /Enable Browser Sync -->
+
+</div></div> <!--OffCanvas Div's-->
+</body></html>
