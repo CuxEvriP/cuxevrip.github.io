@@ -6,20 +6,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>Ray Tech 1 | Cux&#39;s Blog</title>
+  <title>Ray Tech 2 | Cux&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ray渲染基础教程一 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/cha">
+  <meta name="description" content="Ray渲染基础教程二ray_controller和Skybox控制器 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bil">
 <meta name="keywords" content="MMD,教程,ray">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ray Tech 1">
-<meta property="og:url" content="http://cuxevrip.top/Ray-Tech-1/index.html">
+<meta property="og:title" content="Ray Tech 2">
+<meta property="og:url" content="http://cuxevrip.top/Ray-Tech-2/index.html">
 <meta property="og:site_name" content="Cux&#39;s Blog">
-<meta property="og:description" content="Ray渲染基础教程一 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/cha">
+<meta property="og:description" content="Ray渲染基础教程二ray_controller和Skybox控制器 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bil">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-08-19T09:26:18.475Z">
+<meta property="og:updated_time" content="2017-08-19T09:25:11.814Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ray Tech 1">
-<meta name="twitter:description" content="Ray渲染基础教程一 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bilibili.com/24434095#!/cha">
+<meta name="twitter:title" content="Ray Tech 2">
+<meta name="twitter:description" content="Ray渲染基础教程二ray_controller和Skybox控制器 Ray-mmd官方地址：https://github.com/ray-cast/ray-mmd更新信息：https://github.com/ray-cast/ray-mmd/releases官方wiki：https://github.com/ray-cast/ray-mmd/wiki官方教程：https://space.bil">
   
     <link rel="alternate" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
   
@@ -129,7 +129,7 @@
     <div class="container post-box">
         <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
             <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
-                <strong>Ray Tech 1</strong>
+                <strong>Ray Tech 2</strong>
             </h1>
             
             <div class="is-flex align-center">
@@ -150,43 +150,30 @@
             
         </div>
         <div class="content" style="overflow: auto">
-            <h3 id="Ray渲染基础教程一"><a href="#Ray渲染基础教程一" class="headerlink" title="Ray渲染基础教程一"></a>Ray渲染基础教程一</h3><blockquote>
+            <h2 id="Ray渲染基础教程二"><a href="#Ray渲染基础教程二" class="headerlink" title="Ray渲染基础教程二"></a>Ray渲染基础教程二</h2><h3 id="ray-controller和Skybox控制器"><a href="#ray-controller和Skybox控制器" class="headerlink" title="ray_controller和Skybox控制器"></a>ray_controller和Skybox控制器</h3><blockquote>
 <p>Ray-mmd官方地址：<a href="https://github.com/ray-cast/ray-mmd" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd</a><br>更新信息：<a href="https://github.com/ray-cast/ray-mmd/releases" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/releases</a><br>官方wiki：<a href="https://github.com/ray-cast/ray-mmd/wiki" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/wiki</a><br>官方教程：<a href="https://space.bilibili.com/24434095#!/channel/detail?cid=18483" target="_blank" rel="external">https://space.bilibili.com/24434095#!/channel/detail?cid=18483</a><br>RC教程：<a href="https://www.bilibili.com/video/av10181955/" target="_blank" rel="external">https://www.bilibili.com/video/av10181955/</a></p>
 </blockquote>
 <hr>
-<h4 id="Ray渲染使用方法与基本操作"><a href="#Ray渲染使用方法与基本操作" class="headerlink" title="Ray渲染使用方法与基本操作"></a>Ray渲染使用方法与基本操作</h4><ol>
-<li>删除或无效模型的高光贴图并保存为model.pmx<br>(1.31版本不支持高光，1.4版本支持高光，在main里载入main_ex_with_sphmap.fx即可)</li>
-<li>在MMD加载ray.x以及ray_controller.pmx</li>
-<li>关闭MMD的抗锯齿，关掉模型轮廓线（场景载入后也要关）</li>
-<li><p>载入天空盒GrandCanyon中的skybox_hdr.pmx文件</p>
-<blockquote>
-<p>4-1.在MME里 Main选项卡中给天空盒载入skybox_hdr.fx<br>4-2.在EnvLightMap中给天空盒载入skylighting_hdr.fx<br>4-3.在MaterialMap中给天空盒载入\Materials\material_skybox.fx<br>4-4.在FogMap中给天空盒载入xx_fog.fx（如果需要用或者有的话）<br>4-5.在&lt;背景-模型描绘顺序&gt;将天空盒调到第一（就是把skybox.pmx调到第一位）<br>（描绘顺序1天空盒2场景3模型）<br>4-6.在skybox.pmx的模型上控制天空盒效果</p>
-</blockquote>
-</li>
-<li><p>载入已去高光贴图的模型文件model.pmx<br>5-1.在Main中给人物模型载入main.fx<br>5-2.在MaterialMap中把人物模型展开<br>5-3.给人物模型各个部位打上对应材质</p>
-<blockquote>
-<p> a)给身体部位加载\Materials\Skin\TDA\material_TDA_body.fx<br>b)给脸的部位加载\Materials\Skin\TDA\material_TDA_face.fx<br> c)给头发部位加载\Materials\Hair\material_hair.fx<br> d)给衣服部位加载\Materials\Cloth\material_cloth.fx<br> e)给发光部位加载\Materials\Emissive\Fixed Color xN\material_albedo_xN.fx<br> f)给光滑部位加载\Materials\ClearCoat\material_albedo.fx<br>  g)给金属部位加载\Materials\Metallic\Flat ingot smooth\material_smooth_metal.fx</p>
-</blockquote>
-</li>
-<li><p>删除或无效场景的高光贴图并保存为stage.pmx</p>
-</li>
-<li>重复与人物模型相同的操作</li>
-<li>调整ray_controller.pmx和skybox.pmx的参数使画面达到较好的效果</li>
-</ol>
+<h3 id="ray-controller-pmx"><a href="#ray-controller-pmx" class="headerlink" title="ray_controller.pmx"></a>ray_controller.pmx</h3><p>SunLight             主光源的整体光强<br>SunShadowRGBV         主光源产生阴影时的颜色<br>MultiLight             多光源的整体光强<br>SSAO                环境光遮蔽强度<br>SSAORadius            环境光遮蔽半径<br>SSDO                多光源的直接遮蔽强度<br>SSSS                 次表面散射的模糊强度</p>
+<p>BloomThreshold         产生泛光所需的亮度阈值<br>BloomRadius         泛光的模糊半径<br>BloomColorA HSV        泛光颜色<br>BloomStarFade</p>
+<p>Exposure            曝光强度，默认2.0的曝光<br>Vignette             窗口四周的暗角(虚角)<br>Dispersion             相机色散的效果<br>DispersionRadius     相机色散的区域大小</p>
+<p>Contrast             对比度<br>Saturation             饱和度<br>Gamma                 伽马<br>Temperature         色温<br>BalanceR/G/B         色彩平衡</p>
 <hr>
-<h4 id="自定义天空盒的方法"><a href="#自定义天空盒的方法" class="headerlink" title="自定义天空盒的方法"></a>自定义天空盒的方法</h4><ol>
-<li>先备份一份\Skybox\GrandCanyon</li>
-<li>重命名为任意你喜欢的名字，如newskybox</li>
-<li>上Nico静画搜索下载某个天空盒的图片并用PS打开</li>
-<li>在菜单 图像—模式 中选择32位高位深色彩通道模式</li>
-<li>选择 图像—图像大小，调整成指定的图片比例：4000宽x2000高</li>
-<li>将天空盒图片存储导出为HDR格式</li>
-<li>解压\Tools\cmft_rgbt_x1024.zip压缩包</li>
-<li>将刚刚导出的HDR文件拖在\Tools\cmft_rgbt_x1024\cmft_x64_high_rgbt.exe上</li>
-<li>接着会弹出一个黑色窗口，等待他处理完毕，处理完毕后会在HDR同路径生成三个文件</li>
-<li>将生成的三个文件覆盖到\Skybox\newskybox\texture中</li>
-<li>自定义天空盒完毕，可以在Ray中使用了，使用方法不变</li>
-</ol>
+<h3 id="Skybox-pmx"><a href="#Skybox-pmx" class="headerlink" title="Skybox.pmx"></a>Skybox.pmx</h3><p>BalanceRGB        颜色平衡RGB<br>BalanceGray        颜色平衡灰度</p>
+<p>EnvDiffLight    环境漫反射<br>EnvSpecLight    环境镜反射<br>EnvSSSLight        环境次表面光<br>EnvRotateXYZ    旋转天空盒</p>
+<p>DiffuseRGB        漫反射RGB<br>DiffuseGray        漫反射灰度</p>
+<p>SpecularRGB        镜反射RGB<br>SpecularGray    镜反射灰度</p>
+<hr>
+<h3 id="Time-of-the-day-pmx"><a href="#Time-of-the-day-pmx" class="headerlink" title="Time of the day.pmx"></a>Time of the day.pmx</h3><p>注意天空盒MME选项栏中载入几个fx<br>Main中载入Time of the day.fx<br>FogMap中载入Time of fog.fx（或选择其他fog或者不用）<br>EnvLightMap中载入Time of lighting.fx<br>MaterialMap中载入material_skybox.fx</p>
+<p>SunRadius            太阳半径<br>SunRadiance            太阳光强度<br>MiePhase            米散射（Godray强度）<br>MieTurbidity        米浑浊<br>RayLeighColorHSV    Godray颜色<br>RayleighHeight        Godray高度</p>
+<p>EnvDiffLight        环境光漫反射<br>EnvSpecLight        环境光镜反射<br>EnvSSSLight            环境光次表面反射</p>
+<p>FogRange            雾范围<br>FogIntensity        雾强度<br>FogDensity            雾密度<br>FogDensityFar        雾远处密度</p>
+<p>Cloud                云<br>CloudTurbidity        云混浊度<br>CloudSpeed            云速度</p>
+<hr>
+<h3 id="Time-of-the-night-pmx"><a href="#Time-of-the-night-pmx" class="headerlink" title="Time of the night.pmx"></a>Time of the night.pmx</h3><p>SunRadius            太阳半径<br>SunRadiance            太阳光强度<br>MiePhase            太阳光晕<br>MieTurbidity        太阳混浊度<br>RayLeighColorHSV    太阳光线颜色<br>RayleighHeight        太阳光线强度</p>
+<p>EnvDiffLight        环境光漫反射<br>EnvSpecLight        环境光镜反射<br>EnvSSSLight            环境光次表面反射</p>
+<p>FogRange            雾范围<br>FogIntensity        雾强度<br>FogDensity            雾密度</p>
+<p>StarSaturation        星星饱和度<br>StarBrightness        星星亮度<br>Meteor                流星        </p>
 
         </div>
         <div class="post-reply">
