@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  
+  <title>MMD Halation And Godray | Cux&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MMD中光晕和圣光使用方法MME下载地址 ikeno：http://ux.getuploader.com/ikeno/Ray：https://github.com/ray-cast/ray-mmd/   本文介绍2种光晕ikLensGhostMME文件夹下面有两个.x文件ikLensGhost_Light.x            追踪太阳光ikLensGhost.x">
+<meta name="keywords" content="MMD,教程,ikeno,ray">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MMD Halation And Godray">
+<meta property="og:url" content="http://cuxevrip.top/MMD-Halation-And-Godray/index.html">
+<meta property="og:site_name" content="Cux&#39;s Blog">
+<meta property="og:description" content="MMD中光晕和圣光使用方法MME下载地址 ikeno：http://ux.getuploader.com/ikeno/Ray：https://github.com/ray-cast/ray-mmd/   本文介绍2种光晕ikLensGhostMME文件夹下面有两个.x文件ikLensGhost_Light.x            追踪太阳光ikLensGhost.x">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2017-08-22T14:55:38.785Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MMD Halation And Godray">
+<meta name="twitter:description" content="MMD中光晕和圣光使用方法MME下载地址 ikeno：http://ux.getuploader.com/ikeno/Ray：https://github.com/ray-cast/ray-mmd/   本文介绍2种光晕ikLensGhostMME文件夹下面有两个.x文件ikLensGhost_Light.x            追踪太阳光ikLensGhost.x">
+  
+    <link rel="alternate" href="/atom.xml" title="Cux&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/layout.css">
+  
+
+</head>
+
+<body>
+  <header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">Cux</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/tags/MMD/">
+                MMD
+            </a>
+            
+            <a class="nav-item" href="/">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/tags/MMD/">
+                MMD
+            </a>
+            
+            <a class="nav-item flex-1" href="/">
+                About
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <!--博文页面-->
+
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
+        background-size: cover;
+        background-color: lightsteelblue;
+    }
+
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
+    }
+
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .flow-chart {
+        text-align: center;
+    }
+
+    img[alt="post-cover"] {
+        display: none;
+    }
+</style>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>MMD Halation And Godray</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="http://i1.bvimg.com/607380/2b355dd6386b922a.jpg">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> Cux</span>
+                <span class="post-date sub-title">at: 2017-08-22</span>
+            </div>
+            
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/tags/MMD/">MMD</a>
+                    
+                         <a class="tag is-post-tag" href="/tags/教程/">教程</a>
+                    
+                         <a class="tag is-post-tag" href="/tags/ikeno/">ikeno</a>
+                    
+                         <a class="tag is-post-tag" href="/tags/ray/">ray</a>
+                    
+                </div>
+            
+        </div>
+        <div class="content" style="overflow: auto">
+            <h2 id="MMD中光晕和圣光使用方法"><a href="#MMD中光晕和圣光使用方法" class="headerlink" title="MMD中光晕和圣光使用方法"></a>MMD中光晕和圣光使用方法</h2><h3 id="MME下载地址"><a href="#MME下载地址" class="headerlink" title="MME下载地址"></a>MME下载地址</h3><blockquote>
+<p>ikeno：<a href="http://ux.getuploader.com/ikeno/" target="_blank" rel="external">http://ux.getuploader.com/ikeno/</a><br>Ray：<a href="https://github.com/ray-cast/ray-mmd/" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/</a></p>
+</blockquote>
+<hr>
+<h3 id="本文介绍2种光晕"><a href="#本文介绍2种光晕" class="headerlink" title="本文介绍2种光晕"></a>本文介绍2种光晕</h3><h4 id="ikLensGhost"><a href="#ikLensGhost" class="headerlink" title="ikLensGhost"></a>ikLensGhost</h4><p>MME文件夹下面有两个.x文件<br>ikLensGhost_Light.x            追踪太阳光<br>ikLensGhost.x                手动设置光晕位置</p>
+<h4 id="ikLensGhost-Light-x"><a href="#ikLensGhost-Light-x" class="headerlink" title="ikLensGhost_Light.x"></a>ikLensGhost_Light.x</h4><p>载入后，在MME中有个ObjectMaskRT，在该选项卡下面取消勾选天空盒<br>然后调整Si可以调整光晕强度，还有Tr透明度</p>
+<h4 id="ikLensGhost-x"><a href="#ikLensGhost-x" class="headerlink" title="ikLensGhost.x"></a>ikLensGhost.x</h4><p>载入后，同样在ObjectMaskRT取消勾选天空盒<br>然后通过相机选择一个合适的位置，把位置填给<br>ikLensGhost.x的xyz坐标，点注册<br>然后通过调整Si光晕大小和Tr透明度把光晕设置为合适和状态</p>
+<hr>
+<h4 id="OpticalFlares"><a href="#OpticalFlares" class="headerlink" title="OpticalFlares"></a>OpticalFlares</h4><p>在Ray拓展文件夹里面有一个OpticalFlares文件夹<br>该文件夹里面提供了4种光晕<br>Sun Flare Circle Bokeh 1<br>Sun Flare Circle Bokeh 2<br>Sun Flare Circle Bokeh 3<br>Sun Flare Hexagonal Bokeh 1<br>前三者区别不大，第四个光晕是多边形光晕<br>每个文件夹里面都有<br>OpticalFlares by Sun.x        追踪太阳光<br>OpticalFlares by Bone.x        自定义光晕位置</p>
+<h4 id="OpticalFlares-by-Sun-x"><a href="#OpticalFlares-by-Sun-x" class="headerlink" title="OpticalFlares by Sun.x"></a>OpticalFlares by Sun.x</h4><p>载入其中一个.x文件，然后一定要把该光晕.x文件<br>在附件编辑中把光晕放在仅次于ray.x之下的位置<br>接下来调整光晕强度Si数值</p>
+<h4 id="OpticalFlares-by-Bone-x"><a href="#OpticalFlares-by-Bone-x" class="headerlink" title="OpticalFlares by Bone.x"></a>OpticalFlares by Bone.x</h4><p>参考ikLenGhost.x的使用方法</p>
+<hr>
+<h2 id="本文介绍两种圣光"><a href="#本文介绍两种圣光" class="headerlink" title="本文介绍两种圣光"></a>本文介绍两种圣光</h2><h4 id="ikGodray"><a href="#ikGodray" class="headerlink" title="ikGodray"></a>ikGodray</h4><p>ikGodray文件夹下有3个.x文件分别是<br>ikGodray.x            发射白光，光颜色不受照明控制<br>ikGodraySun.x        发射当前照明设置的颜色光<br>ikGodrayCtrl.x        需要自己设置圣光位置（不推荐）<br>载入其中任意一个.x文件<br>然后在MME里面会有一个MaskMapRT选项卡，把天空盒取消勾选<br>调整Si     越小圣光越强<br>调整Tr    越小圣光越透明</p>
+<hr>
+<h4 id="Raygodray"><a href="#Raygodray" class="headerlink" title="Raygodray"></a>Raygodray</h4><p>Ray1.4版本新增Godray功能<br>需要用到Time of the day或Time of the night天空盒</p>
+<h5 id="Time-of-the-day-pmx"><a href="#Time-of-the-day-pmx" class="headerlink" title="Time of the day.pmx"></a>Time of the day.pmx</h5><p>载入ray.x和time of the day天空盒<br>在MME里的Main，EnvLightMap，MaterialMap选项卡<br>中给天空盒载入对应的fx文件<br>然后在FogMap选项卡中给天空盒载入<br>Time of fog with godray.fx或Time of fog with godray with cloud caster.fx<br>这时候Ray渲染的Godray以及生效，但效果不强<br>先把照明RGB都调为255<br>然后在time of the day.pmx的第一个表情栏中<br>把MiePhase+适当调大，切回去相机模式，会发现圣光有所增强<br>注意不要把MiePhase+调满，满状态有关闭圣光的效果</p>
+<hr>
+<h5 id="Time-of-the-night-pmx"><a href="#Time-of-the-night-pmx" class="headerlink" title="Time of the night.pmx"></a>Time of the night.pmx</h5><p>同time of the day一样，通过调大照明RGB和MiePhase+<br>可以起到增强圣光效果<br>如果觉得圣光不够强<br>需要额外载入Ray自带的大气雾AtmosphericFog.pmx<br>载入大气雾后在FogMap中给大气雾载入<br>atmospheric_fog with godray high.fx或者atmospheric_fog_without sky with godray high.fx<br>without sky表示不对天空盒造成影响的大气雾<br>个人推荐使用without sky的fx文件<br>然后在AtmosphericFog.pmx第一个表情栏里适当调高MiePhase+的数值<br>同样可以达到增强圣光的效果</p>
+
+        </div>
+        <div class="post-reply">
+            
+            
+        </div>
+    </div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
+        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
+        <br>
+        Copyright © Cux 2017
+        <br>
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/search_core.js"></script>
+<script src="/js/script.js"></script>
+
+</body>
+</html>

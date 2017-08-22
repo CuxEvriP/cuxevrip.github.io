@@ -3,6 +3,44 @@
   
     
     <entry>
+      <title><![CDATA[MMD Halation And Godray]]></title>
+      <url>/MMD-Halation-And-Godray/</url>
+      <content type="html"><![CDATA[<h2 id="MMD中光晕和圣光使用方法"><a href="#MMD中光晕和圣光使用方法" class="headerlink" title="MMD中光晕和圣光使用方法"></a>MMD中光晕和圣光使用方法</h2><h3 id="MME下载地址"><a href="#MME下载地址" class="headerlink" title="MME下载地址"></a>MME下载地址</h3><blockquote>
+<p>ikeno：<a href="http://ux.getuploader.com/ikeno/" target="_blank" rel="external">http://ux.getuploader.com/ikeno/</a><br>Ray：<a href="https://github.com/ray-cast/ray-mmd/" target="_blank" rel="external">https://github.com/ray-cast/ray-mmd/</a></p>
+</blockquote>
+<hr>
+<h3 id="本文介绍2种光晕"><a href="#本文介绍2种光晕" class="headerlink" title="本文介绍2种光晕"></a>本文介绍2种光晕</h3><h4 id="ikLensGhost"><a href="#ikLensGhost" class="headerlink" title="ikLensGhost"></a>ikLensGhost</h4><p>MME文件夹下面有两个.x文件<br>ikLensGhost_Light.x            追踪太阳光<br>ikLensGhost.x                手动设置光晕位置</p>
+<h4 id="ikLensGhost-Light-x"><a href="#ikLensGhost-Light-x" class="headerlink" title="ikLensGhost_Light.x"></a>ikLensGhost_Light.x</h4><p>载入后，在MME中有个ObjectMaskRT，在该选项卡下面取消勾选天空盒<br>然后调整Si可以调整光晕强度，还有Tr透明度</p>
+<h4 id="ikLensGhost-x"><a href="#ikLensGhost-x" class="headerlink" title="ikLensGhost.x"></a>ikLensGhost.x</h4><p>载入后，同样在ObjectMaskRT取消勾选天空盒<br>然后通过相机选择一个合适的位置，把位置填给<br>ikLensGhost.x的xyz坐标，点注册<br>然后通过调整Si光晕大小和Tr透明度把光晕设置为合适和状态</p>
+<hr>
+<h4 id="OpticalFlares"><a href="#OpticalFlares" class="headerlink" title="OpticalFlares"></a>OpticalFlares</h4><p>在Ray拓展文件夹里面有一个OpticalFlares文件夹<br>该文件夹里面提供了4种光晕<br>Sun Flare Circle Bokeh 1<br>Sun Flare Circle Bokeh 2<br>Sun Flare Circle Bokeh 3<br>Sun Flare Hexagonal Bokeh 1<br>前三者区别不大，第四个光晕是多边形光晕<br>每个文件夹里面都有<br>OpticalFlares by Sun.x        追踪太阳光<br>OpticalFlares by Bone.x        自定义光晕位置</p>
+<h4 id="OpticalFlares-by-Sun-x"><a href="#OpticalFlares-by-Sun-x" class="headerlink" title="OpticalFlares by Sun.x"></a>OpticalFlares by Sun.x</h4><p>载入其中一个.x文件，然后一定要把该光晕.x文件<br>在附件编辑中把光晕放在仅次于ray.x之下的位置<br>接下来调整光晕强度Si数值</p>
+<h4 id="OpticalFlares-by-Bone-x"><a href="#OpticalFlares-by-Bone-x" class="headerlink" title="OpticalFlares by Bone.x"></a>OpticalFlares by Bone.x</h4><p>参考ikLenGhost.x的使用方法</p>
+<hr>
+<h2 id="本文介绍两种圣光"><a href="#本文介绍两种圣光" class="headerlink" title="本文介绍两种圣光"></a>本文介绍两种圣光</h2><h4 id="ikGodray"><a href="#ikGodray" class="headerlink" title="ikGodray"></a>ikGodray</h4><p>ikGodray文件夹下有3个.x文件分别是<br>ikGodray.x            发射白光，光颜色不受照明控制<br>ikGodraySun.x        发射当前照明设置的颜色光<br>ikGodrayCtrl.x        需要自己设置圣光位置（不推荐）<br>载入其中任意一个.x文件<br>然后在MME里面会有一个MaskMapRT选项卡，把天空盒取消勾选<br>调整Si     越小圣光越强<br>调整Tr    越小圣光越透明</p>
+<hr>
+<h4 id="Raygodray"><a href="#Raygodray" class="headerlink" title="Raygodray"></a>Raygodray</h4><p>Ray1.4版本新增Godray功能<br>需要用到Time of the day或Time of the night天空盒</p>
+<h5 id="Time-of-the-day-pmx"><a href="#Time-of-the-day-pmx" class="headerlink" title="Time of the day.pmx"></a>Time of the day.pmx</h5><p>载入ray.x和time of the day天空盒<br>在MME里的Main，EnvLightMap，MaterialMap选项卡<br>中给天空盒载入对应的fx文件<br>然后在FogMap选项卡中给天空盒载入<br>Time of fog with godray.fx或Time of fog with godray with cloud caster.fx<br>这时候Ray渲染的Godray以及生效，但效果不强<br>先把照明RGB都调为255<br>然后在time of the day.pmx的第一个表情栏中<br>把MiePhase+适当调大，切回去相机模式，会发现圣光有所增强<br>注意不要把MiePhase+调满，满状态有关闭圣光的效果</p>
+<hr>
+<h5 id="Time-of-the-night-pmx"><a href="#Time-of-the-night-pmx" class="headerlink" title="Time of the night.pmx"></a>Time of the night.pmx</h5><p>同time of the day一样，通过调大照明RGB和MiePhase+<br>可以起到增强圣光效果<br>如果觉得圣光不够强<br>需要额外载入Ray自带的大气雾AtmosphericFog.pmx<br>载入大气雾后在FogMap中给大气雾载入<br>atmospheric_fog with godray high.fx或者atmospheric_fog_without sky with godray high.fx<br>without sky表示不对天空盒造成影响的大气雾<br>个人推荐使用without sky的fx文件<br>然后在AtmosphericFog.pmx第一个表情栏里适当调高MiePhase+的数值<br>同样可以达到增强圣光的效果</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> MMD </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> ikeno </tag>
+            
+            <tag> ray </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[MMD Collect]]></title>
       <url>/MMD-Collect/</url>
       <content type="html"><![CDATA[<h2 id="MMD资源收集"><a href="#MMD资源收集" class="headerlink" title="MMD资源收集"></a>MMD资源收集</h2><h3 id="配布资源日语名称"><a href="#配布资源日语名称" class="headerlink" title="配布资源日语名称"></a>配布资源日语名称</h3><p>モデル —model—（模型）<br>ステージ —stage—（场景）<br>モーション—motion—（动作）<br>アクセサリー —accessory—（物件）</p>
